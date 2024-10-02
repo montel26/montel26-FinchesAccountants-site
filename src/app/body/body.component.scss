@@ -1,0 +1,31 @@
+// Font color= 001F3F
+body{
+    background-color:#FFFFF0;
+    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFF0; /* Optional: Set background color if needed */
+  }
+  
+.app-navbar{
+    margin-left: 100%;
+}
+.centered-text {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: left;  
+  line-height: 1.5;
+  color: #333; /* Darker color for contrast */
+  padding: 0 1rem;
+  margin-top: 12%;
+  margin-left: 10%; 
+  white-space: nowrap;/* Add padding for some space */
+}
+  
