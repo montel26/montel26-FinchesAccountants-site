@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BodyComponent } from './body/body.component';
 import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   {  
     path:"",
-    component: AboutComponent
+    component: ServicesComponent
   }
 ];
 

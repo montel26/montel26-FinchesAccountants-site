@@ -1,20 +1,19 @@
 body {
     color: #F7E7CE;
     font-family: 'Bert Sans ExtraBold', sans-serif; /* Ensure correct font family */
-    // width: 100%;
-    // height: 70%;
     margin: 0;
     padding: 0;
     font-weight: bold;
+    background-color: #F7E7CE;
 }
 
 .content-section {
     background-color: #001F3F; /* Background color only for the section */
     padding: 2rem; /* Add padding for the section */
+    margin-top: 1%;
 }
 
 .about {
-    margin-top: 12%;
     margin-left: 39%;
     font-weight: bold;
 }
@@ -28,4 +27,43 @@ p {
     border-bottom: 2px solid #F7E7CE;
     padding-bottom: 2%;
     white-space: nowrap;
+}
+
+.about-firm {
+    background-color: #6883D7;
+    padding: 2rem;
+    margin-top: 1%;
+}
+
+.heading {
+    margin-left: 20%;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .about, .heading {
+        margin-left: 10%;
+    }
+
+    p {
+        width: 90%;
+        white-space: normal; /* Allows text to wrap on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about, .heading {
+        margin-left: 5%;
+    }
+
+    p {
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .content-section, .about-firm {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
 }
