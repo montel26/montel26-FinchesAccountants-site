@@ -1,31 +1,66 @@
-// Font color= 001F3F
-body{
-    background-color:#FFFFF0;
-    
+body {
+  background-color: #FFFFF0;
+  // background-image: url("assests/jhb-skyline.jpg");
+  // background-size: cover;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; /* Allow stacking elements for smaller screens */
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #FFFFF0; /* Optional: Set background color if needed */
-  }
-  
-.app-navbar{
-    margin-left: 100%;
+.app-navbar {
+  margin-left: 50%;
 }
+
 .centered-text {
-  font-size: 2.5rem; /* Adjust size as needed */
+  font-size: 2.5rem; /* Large screens */
   font-weight: bold;
-  text-align: left;  
+  text-align: left;
   line-height: 1.5;
-  color: #333; /* Darker color for contrast */
+  color: #001F3F;
   padding: 0 1rem;
   margin-top: 12%;
-  margin-left: 10%; 
-  white-space: nowrap;/* Add padding for some space */
+  margin-left: 10%;
+  white-space: nowrap;
+  font-family: "Bert Sans ExtraBold";
 }
+
+@media (max-width: 768px) {
+  /* For tablets */
+  .centered-text {
+    font-size: 2rem; /* Reduce font size */
+    margin-left: 5%;
+    margin-top: 8%;
+    white-space: normal; /* Allow text to wrap */
+  }
+  
+  .app-navbar {
+    margin-left: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile devices */
+  .centered-text {
+    font-size: 1.5rem; /* Further reduce font size */
+    margin-left: 2%;
+    margin-top: 5%;
+    text-align: center; /* Center text for mobile */
+  }
+
+  .app-navbar {
+    margin-left: 0; /* Adjust navbar margin */
+    width: 100%; /* Make navbar full width on small screens */
+    text-align: center; /* Center navbar content */
+  }
+
+  body, html {
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top on mobile */
+    padding: 1rem; /* Add padding */
+  }
+}
+
   

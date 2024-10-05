@@ -1,1 +1,70 @@
-// background = 344966  font= 73B4B1
+footer.content-section {
+    background-color: #344966; /* Footer background color */
+    padding: 1rem; /* Reduced padding for the footer */
+    color: #73B4B1; /* Footer text color */
+}
+
+.footer {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the items */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.contact-info, .services, .address {
+    flex: 0 0 40%; /* Each section will occupy 40% of the width */
+    margin: 0.2rem; /* Further reduced margin around each section */
+    min-width: 250px; /* Minimum width for responsiveness */
+    max-width: 400px; /* Maximum width to prevent it from being too wide */
+    text-align: center; /* Center text in each section */
+    padding: 0.2rem; /* Further reduced padding for spacing */
+    
+}
+
+h2 {
+    font-size: 1.5rem; /* Header font size */
+    margin-bottom: 0.4rem; /* Space below headers */
+    border-bottom: 2px solid  #73B4B1;
+    padding: 22px;
+}
+
+p, li {
+    font-size: 1rem; /* Paragraph and list item font size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Remove bullet points from the services list */
+.services-list {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align on small screens */
+    }
+    
+    .contact-info, .services, .address {
+        text-align: center; /* Center text alignment */
+        margin: 0.2rem 0; /* Reduced margin on top and bottom */
+        flex: 1 1 auto; /* Allow items to take full width when stacked */
+        max-width: none; /* Remove max-width restriction on smaller screens */
+        padding: 0; /* Remove padding on smaller screens for full width */
+    }
+}
+
+@media (max-width: 480px) {
+    footer.content-section {
+        padding: 0.5rem; /* Reduce padding for mobile */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Smaller font size for headers on mobile */
+    }
+    
+    p, li {
+        font-size: 0.9rem; /* Smaller font size for paragraphs and list items on mobile */
+    }
+}

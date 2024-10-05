@@ -1,1 +1,103 @@
 // F3E493 background   font = 344966
+.contact-section {
+    background-color: #F3E493; /* Background color */
+    color: #344966; /* Text color */
+    padding-left: 21rem; /* Padding for the section */
+    position: center;
+    // margin-left: 0%;
+}
+
+.content {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between text and form */
+    align-items: flex-start; /* Align items at the start */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.text-content {
+    flex: 1; /* Allow text content to take available space */
+    margin-right: 2rem; /* Space between text and form */
+}
+
+h1 {
+    font-size: 2rem; /* Main heading size */
+    margin-bottom: 1rem; /* Space below heading */
+    
+}
+.strategy{
+    border-bottom: 2px solid #344966;
+}
+
+h2 {
+    font-size: 1.5rem; /* Subheading size */
+    margin-bottom: 1rem; /* Space below subheading */
+}
+
+p {
+    font-size: 1rem; /* Paragraph text size */
+    line-height: 1.5; /* Line height for readability */
+    margin: 0.5rem 0; /* Space around paragraphs */
+    // white-space: nowrap;
+}
+
+/* Styling for the contact form */
+.contact-form {
+    display: flex; /* Use Flexbox for form layout */
+    flex-direction: column; /* Stack elements vertically */
+    width: 300px; /* Fixed width for the form */
+}
+
+.contact-form label {
+    font-size: 1rem; /* Label text size */
+    margin-bottom: 0.5rem; /* Space below label */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Padding for input fields */
+    margin-bottom: 1rem; /* Space below input fields */
+    border: 1px solid #73B4B1; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.contact-form button {
+    background-color: #4169E1; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 0.5rem 1rem; /* Padding for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Button text size */
+}
+
+.contact-form button:hover {
+    background-color: #73B4B1; /* Change button color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items on small screens */
+    }
+    
+    .text-content {
+        margin-right: 0; /* Remove right margin on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+    
+    .contact-form {
+        width: 100%; /* Full width for the form on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller heading size on small screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Smaller subheading size on small screens */
+    }
+}
