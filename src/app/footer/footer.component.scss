@@ -2,6 +2,7 @@ footer.content-section {
     background-color: #344966; /* Footer background color */
     padding: 1rem; /* Reduced padding for the footer */
     color: #73B4B1; /* Footer text color */
+    
 }
 
 .footer {
@@ -9,6 +10,7 @@ footer.content-section {
     flex-wrap: wrap; /* Allow items to wrap */
     justify-content: center; /* Center the items */
     align-items: flex-start; /* Align items at the start */
+    font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
 .contact-info, .services, .address {

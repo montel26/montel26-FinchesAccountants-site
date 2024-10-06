@@ -9,7 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   {  
     path:"",
-    component: ServicesComponent
+    component: BodyComponent
   }
 ];
 
