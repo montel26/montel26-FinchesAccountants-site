@@ -1,12 +1,13 @@
 body {
   background-color: #FFFFF0;
-  // background-image: url("C:/Users/monte/montel26-FinchesAccountants-site/public/jhb-skyline.jpg");
+  // background-image: url("/src/assets/jhb-skyline.jpg");
   // background-size: cover;
   padding: 0;
   height: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  margin-left: 6%;
+  // align-items: center;
   flex-direction: column; /* Allow stacking elements for smaller screens */
   font-family: 'Bert Sans ExtraBold', sans-serif;
 }
@@ -23,9 +24,12 @@ body {
   color: #001F3F;
   padding: 0 1rem;
   margin-top: 12%;
-  margin-left: 10%;
+  margin-left: 0%;
   white-space: nowrap;
   // font-family: "Bert Sans ExtraBold";
+}
+.about{
+  margin-top: 25%;
 }
 
 @media (max-width: 768px) {

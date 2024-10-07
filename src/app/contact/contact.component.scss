@@ -1,11 +1,10 @@
-// F3E493 background   font = 344966
 .contact-section {
     background-color: #F3E493; /* Background color */
     color: #344966; /* Text color */
-    padding-left: 21rem; /* Padding for the section */
+    padding-left: 12rem; /* Padding for the section */
     position: center;
     font-family: 'Bert Sans ExtraBold', sans-serif;
-    // margin-left: 0%;
+    margin-left: 0%;
 }
 
 .content {
@@ -17,16 +16,23 @@
 
 .text-content {
     flex: 1; /* Allow text content to take available space */
-    margin-right: 2rem; /* Space between text and form */
+    margin-right: 5rem; /* Space between text and form */
+    margin-bottom: 2rem; /* Add bottom margin to increase space between text and form */
+    padding-left: 12rem;
+    // border-bottom: 2px solid #344966;
 }
 
+.final{
+    border-bottom: 2px solid #344966;
+}
 h1 {
     font-size: 2rem; /* Main heading size */
     margin-bottom: 1rem; /* Space below heading */
-    
+    margin-right: 6%;
 }
 .strategy{
     border-bottom: 2px solid #344966;
+    // margin-left: 2%;
 }
 
 h2 {
@@ -38,7 +44,6 @@ p {
     font-size: 1rem; /* Paragraph text size */
     line-height: 1.5; /* Line height for readability */
     margin: 0.5rem 0; /* Space around paragraphs */
-    // white-space: nowrap;
 }
 
 /* Styling for the contact form */
@@ -86,6 +91,7 @@ p {
     .text-content {
         margin-right: 0; /* Remove right margin on small screens */
         text-align: center; /* Center text on small screens */
+        margin-bottom: 2rem; /* Add margin for spacing */
     }
     
     .contact-form {

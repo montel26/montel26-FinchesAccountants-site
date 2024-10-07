@@ -17,7 +17,20 @@ body {
     background-color:#B0E0E6;
     font-family: 'Bert Sans ExtraBold', sans-serif;
     
-    
+    // .service {
+//     background-color: #F2F6FF;
+//     border: 1px solid #ddd;
+//     padding: 20px;
+//     margin: 11px;
+//     width: 27%; /* Slightly reduced width */
+//     height: 350px; /* Fixed height to make the boxes more square */
+//     text-align: left;
+//     color: #73B4B1;
+//     border-radius: 2%;
+//     border-right: 2px solid #73B4B1;
+//     border-left: 2px solid #73B4B1;
+//     font-family: 'Bert Sans ExtraBold', sans-serif;
+// }
 }
 .payment-plan {
     display: flex;
@@ -40,6 +53,7 @@ h2{
     padding: 20px;
     margin: 11px;
     width: 30%;
+    // height: 10%;
     text-align:left;
     color: #73B4B1;
     border-radius: 2%;
