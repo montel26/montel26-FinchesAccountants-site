@@ -2,9 +2,8 @@
     background-color: #F3E493; /* Background color */
     color: #344966; /* Text color */
     padding-left: 12rem; /* Padding for the section */
-    position: center;
     font-family: 'Bert Sans ExtraBold', sans-serif;
-    margin-left: 0%;
+    margin-left: 0;
 }
 
 .content {
@@ -18,21 +17,21 @@
     flex: 1; /* Allow text content to take available space */
     margin-right: 5rem; /* Space between text and form */
     margin-bottom: 2rem; /* Add bottom margin to increase space between text and form */
-    padding-left: 12rem;
-    // border-bottom: 2px solid #344966;
+    padding-left: 7rem;
 }
 
-.final{
+.final {
     border-bottom: 2px solid #344966;
 }
+
 h1 {
     font-size: 2rem; /* Main heading size */
     margin-bottom: 1rem; /* Space below heading */
     margin-right: 6%;
 }
-.strategy{
+
+.strategy {
     border-bottom: 2px solid #344966;
-    // margin-left: 2%;
 }
 
 h2 {
