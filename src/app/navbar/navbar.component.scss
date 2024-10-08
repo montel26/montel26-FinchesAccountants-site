@@ -2,15 +2,15 @@
   background-color: #FFFFF0; /* Ivory background */
   padding: 0.5rem;           
   display: flex;
-  justify-content:center;   /* Center content horizontally */
-  align-items: center;       /* Center content vertically */
-  min-height: 50px;          /* Maintain a minimal height */
+  justify-content:center;   
+  align-items: center;       
+  min-height: 50px;          
   font-family: 'Bert Sans ExtraBold', sans-serif;
 
   .navbar-brand {
-    font-size: 1.8rem;       /* Increase text size for the brand */
+    font-size: 1.8rem;       
     font-weight: bold;
-    margin: 0;               /* Remove any default margin */
+    margin: 0;               
   }
 
   .home{
@@ -25,7 +25,7 @@
     display: flex;
     gap: 1rem;
     padding: 0;
-    margin: 0;               /* Remove default padding and margin */
+    margin: 0;               
 
     .nav-item {
       display: inline;
@@ -34,6 +34,21 @@
     }
 
     
+  }
+  .nav-item p {
+    font-family: 'Bert Sans ExtraBold', sans-serif;
+    // color: #001F3F;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer; 
+  }
+  
+  .nav-item p:hover {
+    color: #4169E1; 
+  }
+  
+  .nav-item p.active {
+    color: #4169E1;
+    font-weight: bold;
   }
 }
 
