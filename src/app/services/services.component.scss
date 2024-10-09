@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 4%;
+    padding: 1%;
     box-sizing: border-box;
     // font-family: 'Bert Sans ExtraBold', sans-serif;
 }
@@ -9,11 +9,49 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.plan h1 {
+    color: #327760;
+    border-top: 2px solid  #73B4B1;
+    margin-bottom: 20px;
+}
+/* COMING SOON boxes - now in a row */
+.coming-soon-container {
+    display: flex;
+    flex-direction: row; /* Arrange boxes in a row */
+    justify-content: space-between; /* Space out the boxes evenly */
+    flex-wrap: nowrap; /* Keep boxes in a single row (no wrapping) */
+    max-width: 3000px; /* Optional: Set a max-width for the row */
+    overflow-x: auto; /* Add horizontal scroll if the screen is too small */
+}
+
+.coming-soon-box {
+    width: 300px;
+    height: 415px;
+    background-color: #B0E0E6;
+    border: 2px solid #F2F6FF;
+    border-radius: 6%;
+    margin: 0 2%; /* Add horizontal margin between boxes */
+}
+
+.coming-soon-box h3{
+    color: white;
+    margin-left: 16%;
+    // border-bottom: 2px solid #f6fffc;
+}
+.coming-soon-box-1{
+    width: 300px;
+    height: 415px;
+    background-color: #B0E0E6;
+    border: 2px solid #6BC8A9;
+    border-radius: 6%;
+    margin: 0 2%;
+}
+
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    padding: 40px;
+    // padding: 40px;
     background-color:#B0E0E6;
     font-family: 'Bert Sans ExtraBold', sans-serif;
     
@@ -42,9 +80,18 @@ body {
     
     
 }
-h2{
-    color: #327760;
-    border-top: 2px solid  #73B4B1;
+// h2{
+//     color: #327760;
+//     border-top: 2px solid  #73B4B1;
+// }
+.pa{
+    color: white;
+    border-bottom: 2px solid #6BC8A9;
+}
+.fa{
+    color: white;
+    margin-left: 9%;
+    // border-bottom: 2px solid #f6fffc;
 }
 
 .service {
