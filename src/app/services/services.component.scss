@@ -70,28 +70,68 @@ body {
 //     font-family: 'Bert Sans ExtraBold', sans-serif;
 // }
 }
-.payment-plan {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    padding: 20px;
-    background-color:#B0E0E6;
-    font-family: 'Bert Sans ExtraBold', sans-serif;
+// .payment-plan {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content:center;
+//     padding: 20px;
+//     background-color:#B0E0E6;
+//     font-family: 'Bert Sans ExtraBold', sans-serif;
     
     
-}
+// }
 // h2{
 //     color: #327760;
 //     border-top: 2px solid  #73B4B1;
 // }
 .pa{
-    color: white;
+    color: #001F3F;
     border-bottom: 2px solid #6BC8A9;
 }
 .fa{
     color: white;
     margin-left: 9%;
     // border-bottom: 2px solid #f6fffc;
+}
+.payment-plan {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    justify-content: center; /* Center items */
+    padding: 20px;
+    background-color: #B0E0E6;
+}
+
+/* Individual payment plan box styling */
+.payment-plan-box {
+    background-color: #F2F6FF;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 11px;
+    width: 30%; /* Default width for larger screens */
+    text-align: left;
+    color: #73B4B1;
+    border-radius: 2%;
+    border-right: 2px solid #73B4B1;
+    border-left: 2px solid #73B4B1;
+}
+
+/* Responsive adjustments for payment plan boxes */
+@media (max-width: 1024px) {
+    .payment-plan-box {
+        width: 45%; /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-plan-box {
+        width: 48%; /* Slightly reduced width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-plan-box {
+        width: 100%; /* Full width on mobile */
+    }
 }
 
 .service {
@@ -131,14 +171,44 @@ body {
 // }
 
 /* Responsive */
+// @media (max-width: 768px) {
+//     .service {
+//         width: 45%;
+//     }
+// }
+
+// @media (max-width: 480px) {
+//     .service {
+//         width: 100%;
+//     }
+// }
+@media (max-width: 1024px) {
+    .service, .coming-soon-box, .coming-soon-box-1 {
+        width: 45%; /* Adjust width to 45% for tablets */
+    }
+
+    .read-more-btn {
+        margin-left: 50%; /* Adjust button position */
+    }
+}
+
 @media (max-width: 768px) {
-    .service {
-        width: 45%;
+    .service, .coming-soon-box, .coming-soon-box-1 {
+        width: 48%; /* Stack boxes better on smaller screens */
+    }
+
+    .read-more-btn {
+        margin-left: 40%; /* Adjust button position */
     }
 }
 
 @media (max-width: 480px) {
-    .service {
-        width: 100%;
+    .service, .coming-soon-box, .coming-soon-box-1 {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .read-more-btn {
+        margin-left: 0; /* Button aligns naturally on mobile */
+        text-align: center;
     }
 }

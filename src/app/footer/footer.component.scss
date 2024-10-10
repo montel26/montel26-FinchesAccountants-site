@@ -45,7 +45,41 @@ p, li {
     list-style: none; /* Remove bullets */
     padding: 0; /* Remove padding */
 }
+.banners {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between images */
+    align-items: center;
+    width: calc(100% - 60px); /* Subtract 30px on both sides */
+    max-width: 1432px;
+    height: 239px;
+    background-color: #FFFFF0;
+    margin: 0 auto;
+    padding: 0 40px 0 290px;
+}
 
+.banners img {
+    width: 408px;
+    height: 116px;
+    object-fit: contain; /* Keeps the images properly scaled */
+}
+
+@media (max-width: 768px) {
+    .banners {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        height: auto;
+        padding: 20px;
+    }
+
+    .banners img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Add space between stacked images */
+    }
+
+    .banners img:last-child {
+        margin-bottom: 0; /* Remove margin from last image */
+    }
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .footer {

@@ -52,4 +52,38 @@
   }
 }
 
-  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar-nav {
+      flex-direction: column; /* Stack nav items vertically */
+      gap: 0.5rem; /* Reduce gap for stacked items */
+      margin-top: 0.5rem; /* Add some margin to separate from brand */
+  }
+
+  .nav-item {
+      margin-left: 0; /* Remove margin for stacked items */
+      width: 100%; /* Full width for nav items */
+      text-align: center; /* Center text */
+  }
+}
+
+/* Optional mobile menu toggle */
+@media (max-width: 480px) {
+  .navbar {
+      padding: 1rem; /* Add more padding for mobile */
+  }
+
+  .navbar-brand {
+      font-size: 1.5rem; /* Reduce brand size for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+      display: none; /* Hides the entire navbar when the screen is smaller than 480px */
+  }
+}

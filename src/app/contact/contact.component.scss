@@ -156,3 +156,72 @@ body {
     padding-bottom: 2%;
     border-bottom: 2px solid #001F3F;
 }
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column; /* Stack the form and text content vertically */
+        padding: 2%;
+    }
+
+    .form {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .form-group {
+        width: 100%; /* Make form fields full width on mobile */
+        margin-left: 0;
+    }
+
+    #name, #lastname, #email, #message {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%; /* Make button full width */
+        margin-left: 0;
+    }
+
+    .text-content {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column; /* Stack the form and text content vertically */
+        padding: 2%;
+    }
+
+    .form {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .form-group {
+        width: 100%; /* Make form fields full width on mobile */
+        margin-left: 0;
+    }
+
+    #name, #lastname, #email, #message {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%; /* Make button full width */
+        margin-left: 0;
+    }
+
+    .text-content {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
