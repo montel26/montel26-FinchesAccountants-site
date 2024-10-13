@@ -1,7 +1,8 @@
+
+
 body {
   background-color: #FFFFF0;
-  // background-image: url("/src/assets/jhb-skyline.jpg");
-  // background-size: cover;
+  background-size: cover;
   padding: 0;
   height: 100%;
   display: flex;
@@ -12,6 +13,9 @@ body {
   font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
+.background{
+
+}
 .app-navbar {
   margin-left: 0%;
 }

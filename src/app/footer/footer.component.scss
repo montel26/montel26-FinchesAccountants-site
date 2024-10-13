@@ -45,16 +45,18 @@ p, li {
     list-style: none; /* Remove bullets */
     padding: 0; /* Remove padding */
 }
+
 .banners {
     display: flex;
-    justify-content: space-between; /* Ensures equal spacing between images */
-    align-items: center;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
     width: calc(100% - 60px); /* Subtract 30px on both sides */
     max-width: 1432px;
     height: 239px;
     background-color: #FFFFF0;
     margin: 0 auto;
-    padding: 0 40px 0 290px;
+    padding: 0; /* Remove padding to avoid shifting */
+    gap: 20px; /* Add space between images */
 }
 
 .banners img {
@@ -79,7 +81,21 @@ p, li {
     .banners img:last-child {
         margin-bottom: 0; /* Remove margin from last image */
     }
+
+    .footer {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center align on smaller screens */
+    }
+    
+    .contact-info, .services, .address {
+        text-align: center; /* Center text */
+        margin: 0.2rem 0; /* Reduced margin */
+        flex: 1 1 auto; /* Full width */
+        max-width: 100%; /* Remove max-width restriction */
+        padding: 0; /* Remove padding */
+    }
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .footer {
@@ -102,10 +118,19 @@ p, li {
     }
 
     h2 {
-        font-size: 1.2rem; /* Smaller font size for headers on mobile */
+        font-size: 1.2rem; /* Smaller font size for headers */
     }
     
     p, li {
-        font-size: 0.9rem; /* Smaller font size for paragraphs and list items on mobile */
+        font-size: 0.9rem; /* Smaller font size for paragraphs and list items */
+    }
+    
+    .contact-info, .services, .address {
+        flex: 1 1 100%; /* Each section takes full width on mobile */
+        padding: 0.5rem; /* Add some padding for spacing */
+    }
+
+    .banners {
+        padding: 10px; /* Further reduce padding */
     }
 }
