@@ -13,8 +13,23 @@ body {
   font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
-.background{
+// .background {
+//   background-image: url('/home/wtc/montel26-FinchesAccountants-site/public/mountain.jpg');
+//   background-size: cover; /* Ensures the image covers the entire background */
+//   background-position: center; /* Centers the image */
+//   background-repeat: no-repeat; /* Prevents the image from repeating */
+//   height: 100vh; /* Set the height of the background section */
+//   width: 100%; /* Full width */
+//   display: flex; /* Enables flexible alignment */
+//   justify-content: center; /* Horizontally centers the text */
+//   align-items: center; /* Vertically centers the text */
+//   color: #F7E7CE; /* Text color to match your theme */
+// }
 
+.centered-text {
+  font-size: 2rem; /* Adjust text size */
+  font-weight: bold;
+  text-align: center;
 }
 .app-navbar {
   margin-left: 0%;

@@ -1,89 +1,94 @@
 .navbar {
   background-color: #FFFFF0; /* Ivory background */
-  padding: 0.5rem;           
+  padding: 0.5rem;
   display: flex;
-  justify-content:center;   
-  align-items: center;       
-  min-height: 50px;          
+  justify-content: center; /* Keep navbar items centered */
+  align-items: center;
+  min-height: 50px;
+  position: fixed; /* Allows absolute positioning for the logo */
   font-family: 'Bert Sans ExtraBold', sans-serif;
+  top: 0;
+  width: 100%; /* Makes navbar span the full width */
+  z-index: 1000;
 
-  .navbar-brand {
-    font-size: 1.8rem;       
-    font-weight: bold;
-    margin: 0;               
-  }
+}
 
-  .home{
-    color:#4169E1;
-  }
-  p{
-    font-family: Bert Sans ExtraBold ;
-    color: #001F3F;
-  }
-  .navbar-nav {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;               
+.navbar-logo {
+  position: absolute; /* Move logo out of normal flow */
+  left: 0; /* Align logo to the far left */
+  width: 10%;  /* Adjust size for smaller logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 1rem; /* Add space from edge */
+}
 
-    .nav-item {
-      display: inline;
-      margin-left: 5%;
-      white-space: nowrap;
-    }
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
 
-    
-  }
-  .nav-item p {
-    font-family: 'Bert Sans ExtraBold', sans-serif;
-    // color: #001F3F;
-    transition: color 0.3s ease-in-out;
-    cursor: pointer; 
-  }
-  
-  .nav-item p:hover {
-    color: #4169E1; 
-  }
-  
-  .nav-item p.active {
-    color: #4169E1;
-    font-weight: bold;
-  }
+.nav-item {
+  display: inline;
+  margin-left: 5%;
+  white-space: nowrap;
+}
+
+.home {
+  color: #4169E1;
+}
+
+p {
+  font-family: 'Bert Sans ExtraBold', sans-serif;
+  color: #001F3F;
+}
+
+.nav-item p {
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-item p:hover {
+  color: #4169E1;
+}
+
+.nav-item p.active {
+  color: #4169E1;
+  font-weight: bold;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column; /* Stack items vertically */
-      align-items: flex-start; /* Align items to the start */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar-nav {
-      flex-direction: column; /* Stack nav items vertically */
-      gap: 0.5rem; /* Reduce gap for stacked items */
-      margin-top: 0.5rem; /* Add some margin to separate from brand */
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   .nav-item {
-      margin-left: 0; /* Remove margin for stacked items */
-      width: 100%; /* Full width for nav items */
-      text-align: center; /* Center text */
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 
 /* Optional mobile menu toggle */
 @media (max-width: 480px) {
   .navbar {
-      padding: 1rem; /* Add more padding for mobile */
+    padding: 1rem;
   }
 
-  .navbar-brand {
-      font-size: 1.5rem; /* Reduce brand size for smaller screens */
+  .navbar-logo {
+    width: 30px; /* Make logo smaller on very small screens */
+    margin-left: 0; /* Remove margin for a tighter layout */
   }
 }
-@media (max-width: 480px) {
-  .navbar {
-      display: none; /* Hides the entire navbar when the screen is smaller than 480px */
-  }
-}
+
+
+

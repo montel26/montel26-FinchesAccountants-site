@@ -1,13 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    // padding: 0%;
-}
+// body {
+//     font-family: Arial, sans-serif;
+//     background-color: #f0f0f0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     margin: 0;
+//     // padding: 0%;
+// }
 
 .contact-section {
     background-color: #F3E493; /* Background color for the section */
@@ -28,7 +28,7 @@ body {
 
 .form {
     width: 50%; /* Adjust width of the form section */
-    padding-left: 4%;
+    padding-left: 18%;
     padding-top: 3%;
 }
 
@@ -45,7 +45,7 @@ body {
     // margin-left: 0%;
 }
 .form-group {
-    width: 46%; /* Keep the width as is */
+    width: 0%; /* Keep the width as is */
     margin-bottom: 1rem;
     margin-left: 1%;
 }
@@ -210,9 +210,9 @@ body {
         margin-left: 0;
     }
 
-    #name, #lastname, #email, #message {
-        width: 100%;
-    }
+    // #name, #lastname, #email, #message {
+    //     width: 100%;
+    // }
 
     .contact-form button {
         width: 100%; /* Make button full width */
