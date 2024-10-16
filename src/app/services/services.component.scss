@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 .plan h1 {
     color: #327760;
     border-top: 2px solid  #73B4B1;
@@ -39,14 +40,25 @@ body {
     // border-bottom: 2px solid #f6fffc;
 }
 .coming-soon-box-1{
-    width: 300px;
+        width: 300px;
     height: 415px;
     background-color: #B0E0E6;
     border: 2px solid #6BC8A9;
     border-radius: 6%;
     margin: 0 2%;
+    position: relative;
+    overflow: hidden; 
 }
 
+.video-box {
+    position: absolute; /* Positions the video absolutely within the parent */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video take the full width of the div */
+    height: 100%; /* Make the video take the full height of the div */
+    object-fit: cover; /* Ensures the video covers the entire box without distortion */
+    z-index: -1; /* Puts the video behind the text */
+}
 .services {
     display: flex;
     flex-wrap: wrap;

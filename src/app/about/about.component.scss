@@ -14,8 +14,9 @@ body {
 }
 .svg-icon {
     float: left; /* Keep SVG floated to the left */
+    margin-top: 9%;
     margin-right: 20px; /* Space between SVG and paragraph */
-    margin-left: -20%; /* Move SVG further to the left */
+    margin-left: -40%; /* Move SVG further to the left */
 }
 .svg-icon img {
     filter: invert(85%) sepia(10%) saturate(350%) hue-rotate(330deg); /* Approximation of #F7E7CE */
