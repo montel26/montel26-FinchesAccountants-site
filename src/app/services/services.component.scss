@@ -178,9 +178,7 @@ body {
     font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
-// .read-more-btn:hover {
-//     background-color: #285c4e;
-// }
+
 
 /* Responsive */
 // @media (max-width: 768px) {
@@ -224,3 +222,17 @@ body {
         text-align: center;
     }
 }
+.secret-page {
+    display: none; /* Initially hidden */
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .show {
+    display: block; /* Display when .show is added */
+  }
