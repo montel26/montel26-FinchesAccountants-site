@@ -4,7 +4,6 @@ body {
     margin: 0%;
     padding-top: 0%;
     font-weight: bold;
-    // background-color: #F7E7CE;
 }
 
 .content-section {
@@ -12,15 +11,18 @@ body {
     padding: 2rem; /* Add padding for the section */
     margin-top: 1%;
 }
+
 .svg-icon {
     float: left; /* Keep SVG floated to the left */
     margin-top: 7%;
     margin-right: 20px; /* Space between SVG and paragraph */
     margin-left: -30%; /* Move SVG further to the left */
 }
+
 .svg-icon img {
     filter: invert(85%) sepia(10%) saturate(350%) hue-rotate(330deg); /* Approximation of #F7E7CE */
 }
+
 .about {
     margin-left: 39%;
     font-weight: bold;

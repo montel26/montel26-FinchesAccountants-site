@@ -1,26 +1,28 @@
+/* Navbar Styling */
 .navbar {
   background-color: #FFFFF0; /* Ivory background */
   padding: 0.5rem;
   display: flex;
-  justify-content: center; /* Keep navbar items centered */
+  justify-content: center; /* Center navbar items */
   align-items: center;
   min-height: 50px;
-  position: fixed; /* Allows absolute positioning for the logo */
-  font-family: 'Bert Sans ExtraBold', sans-serif;
+  position: fixed;
   top: 0;
-  width: 100%; /* Makes navbar span the full width */
+  width: 100%; /* Full-width navbar */
   z-index: 1000;
-
+  font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
+/* Navbar Logo */
 .navbar-logo {
-  position: absolute; /* Move logo out of normal flow */
-  left: 0; /* Align logo to the far left */
-  width: 10%;  /* Adjust size for smaller logo */
+  position: absolute;
+  left: 0; /* Align logo to the left */
+  width: 10%; /* Smaller logo size */
   height: auto; /* Maintain aspect ratio */
-  margin-left: 1rem; /* Add space from edge */
+  margin-left: 1rem; /* Space from the left edge */
 }
 
+/* Navbar Navigation */
 .navbar-nav {
   list-style: none;
   display: flex;
@@ -32,19 +34,17 @@
 .nav-item {
   display: inline;
   margin-left: 5%;
-  white-space: nowrap;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
+/* Navbar Item Styling */
 .home {
   color: #4169E1;
 }
 
-p {
+.nav-item p {
   font-family: 'Bert Sans ExtraBold', sans-serif;
   color: #001F3F;
-}
-
-.nav-item p {
   transition: color 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -58,7 +58,7 @@ p {
   font-weight: bold;
 }
 
-/* Responsive adjustments */
+/* Responsive Styling */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -78,17 +78,17 @@ p {
   }
 }
 
-/* Optional mobile menu toggle */
 @media (max-width: 480px) {
   .navbar {
     padding: 1rem;
   }
 
   .navbar-logo {
-    width: 30px; /* Make logo smaller on very small screens */
-    margin-left: 0; /* Remove margin for a tighter layout */
+    width: 30px; /* Smaller logo for small screens */
+    margin-left: 0; /* Remove margin for compact layout */
   }
 }
+
 
 
 

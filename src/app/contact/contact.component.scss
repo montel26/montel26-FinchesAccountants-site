@@ -1,3 +1,4 @@
+/* General Body Styles */
 // body {
 //     font-family: Arial, sans-serif;
 //     background-color: #f0f0f0;
@@ -9,6 +10,7 @@
 //     // padding: 0%;
 // }
 
+/* Contact Section Styling */
 .contact-section {
     background-color: #F3E493; /* Background color for the section */
     color: #344966; /* Text color */
@@ -19,6 +21,7 @@
     border-radius: 8px;
 }
 
+/* Content Layout */
 .content {
     display: flex; /* Flexbox layout */
     justify-content: space-between;
@@ -26,6 +29,7 @@
     padding: 3%;
 }
 
+/* Form Section */
 .form {
     width: 50%; /* Adjust width of the form section */
     padding-left: 18%;
@@ -40,10 +44,12 @@
 
 .form-row {
     display: flex;
-    justify-content:flex-start
+    justify-content: flex-start;
     // margin-bottom: 0rem;
     // margin-left: 0%;
 }
+
+/* Form Group Styles */
 .form-group {
     width: 0%; /* Keep the width as is */
     margin-bottom: 1rem;
@@ -57,7 +63,8 @@
     color: #344966;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea {
     width: 100%;
     border: 2px solid #001f3f; /* Border color */
     border-radius: 5px;
@@ -65,51 +72,32 @@
     color: #344966; /* Text color inside input fields */
     box-sizing: border-box;
     font-size: 1rem;
-    height: 51px; /* Maintain height */
+    padding: 10px;
 }
 
+/* Form Row Adjustments */
 .form-row .form-group {
     width: 46%; /* Adjust width to bring fields closer together */
-    margin-left: 1%; /* Reduce the right margin to bring them closer */
+    margin-left: 1%; /* Reduce the right margin */
 }
 
 .form-row .form-group:last-child {
     margin-right: 0; /* Remove the right margin for the last field */
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #001f3f; /* Border color */
-    border-radius: 5px;
-    background-color: #F3E493; /* Same background as the section */
-    color: #344966; /* Text color inside input fields */
-    box-sizing: border-box;
-    font-size: 1rem;
-}
-
-.notification {
-    background-color: #d4edda; // Light green background
-    color: #155724; // Dark green text
-    padding: 10px;
-    border: 1px solid #c3e6cb; // Border color
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
 .form-group input {
-    height: 51px;
+    height: 51px; /* Maintain height */
 }
 
 .form-group textarea {
-    height: 150px;
-    resize: none;
+    height: 150px; /* Textarea height */
+    resize: none; /* Disable resizing */
 }
 
-/* Specific field widths */
-#name, #lastname {
+/* Specific Field Widths */
+#name,
+#lastname {
     width: 296px;
-    
 }
 
 #email {
@@ -122,31 +110,35 @@
     height: 150px;
 }
 
-.form-group label {
-    margin-bottom: 5px;
-    display: block;
-    font-size: 1rem;
-    color: #344966;
-}
-
+/* Button Styles */
 .contact-form button {
-    width: 68px; /* Set the width to 68px */
-    height: 34px; /* Set the height to 34px */
-    background-color: #344966; /* Keep the background color */
-    color: white; /* Keep the text color */
-    border: none; /* Keep the border removed */
-    border-radius: 4px; /* Keep the rounded corners */
-    cursor: pointer; /* Keep the pointer cursor on hover */
-    font-size: 1rem; /* Keep the font size */
-    margin-top: 1rem; /* Keep the margin at the top */
+    width: 68px; /* Set button width */
+    height: 34px; /* Set button height */
+    background-color: #344966; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1rem; /* Font size */
+    margin-top: 1rem; /* Margin at the top */
     margin-left: 67%;
 }
 
-
 .contact-form button:hover {
-    background-color: #73B4B1;
+    background-color: #73B4B1; /* Button hover effect */
 }
 
+/* Notification Styling */
+.notification {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    padding: 10px;
+    border: 1px solid #c3e6cb; /* Border color */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Text Content Section */
 .text-content {
     padding-right: 10%;
     width: 45%; /* Adjust width of the text section */
@@ -156,15 +148,14 @@
     margin-bottom: 1rem;
 }
 
+/* Decorative Sections */
+.strategy,
+.final {
+    padding-bottom: 2%;
+    border-bottom: 2px solid #001F3F;
+}
 
-.strategy{
-    padding-bottom: 2%;
-    border-bottom: 2px solid #001F3F;
-}
-.final{
-    padding-bottom: 2%;
-    border-bottom: 2px solid #001F3F;
-}
+/* Responsive Styling for Mobile */
 @media (max-width: 768px) {
     .contact-section {
         padding: 1.5rem;
@@ -185,46 +176,15 @@
         margin-left: 0;
     }
 
-    #name, #lastname, #email, #message {
-        width: 100%;
+    #name,
+    #lastname,
+    #email,
+    #message {
+        width: 100%; /* Full-width inputs */
     }
 
     .contact-form button {
-        width: 100%; /* Make button full width */
-        margin-left: 0;
-    }
-
-    .text-content {
-        width: 100%;
-        padding-right: 0;
-    }
-}
-@media (max-width: 768px) {
-    .contact-section {
-        padding: 1.5rem;
-    }
-
-    .content {
-        flex-direction: column; /* Stack the form and text content vertically */
-        padding: 2%;
-    }
-
-    .form {
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .form-group {
-        width: 100%; /* Make form fields full width on mobile */
-        margin-left: 0;
-    }
-
-    // #name, #lastname, #email, #message {
-    //     width: 100%;
-    // }
-
-    .contact-form button {
-        width: 100%; /* Make button full width */
+        width: 100%; /* Full-width button */
         margin-left: 0;
     }
 
@@ -234,18 +194,20 @@
     }
 }
 
+/* Notification Popup */
 .notification {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #344966; /* Change this to your preferred background color */
-    color: white; /* Change text color */
+    background-color: #344966; /* Background color */
+    color: white; /* Text color */
     padding: 15px;
     border-radius: 5px;
     display: none; /* Initially hidden */
     animation: slideIn 0.5s forwards;
 }
 
+/* Slide In Animation for Notification */
 @keyframes slideIn {
     from {
         transform: translateY(-50px);

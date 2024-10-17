@@ -1,149 +1,69 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 1%;
     box-sizing: border-box;
-    // font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
 body {
     font-family: Arial, sans-serif;
 }
 
-
+/* Plan Section Styling */
 .plan h1 {
     color: #327760;
-    border-top: 2px solid  #73B4B1;
+    border-top: 2px solid #73B4B1;
     margin-bottom: 20px;
 }
-/* COMING SOON boxes - now in a row */
+
+/* Coming Soon Boxes */
 .coming-soon-container {
     display: flex;
-    flex-direction: row; /* Arrange boxes in a row */
-    justify-content: space-between; /* Space out the boxes evenly */
-    flex-wrap: nowrap; /* Keep boxes in a single row (no wrapping) */
-    max-width: 3000px; /* Optional: Set a max-width for the row */
-    overflow-x: auto; /* Add horizontal scroll if the screen is too small */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 3000px;
+    overflow-x: auto; /* Horizontal scroll for small screens */
 }
 
-.coming-soon-box {
+.coming-soon-box, .coming-soon-box-1 {
     width: 300px;
     height: 415px;
     background-color: #B0E0E6;
     border: 2px solid #F2F6FF;
     border-radius: 6%;
-    margin: 0 2%; /* Add horizontal margin between boxes */
-}
-
-.coming-soon-box h3{
-    color: white;
-    margin-left: 16%;
-    // border-bottom: 2px solid #f6fffc;
-}
-.coming-soon-box-1{
-        width: 300px;
-    height: 415px;
-    background-color: #B0E0E6;
-    border: 2px solid #6BC8A9;
-    border-radius: 6%;
     margin: 0 2%;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
+.coming-soon-box-1 {
+    border-color: #6BC8A9;
+}
+
+.coming-soon-box h3, .coming-soon-box-1 h3 {
+    color: white;
+    margin-left: 16%;
+}
+
+/* Video Box */
 .video-box {
-    position: absolute; /* Positions the video absolutely within the parent */
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Make the video take the full width of the div */
-    height: 100%; /* Make the video take the full height of the div */
-    object-fit: cover; /* Ensures the video covers the entire box without distortion */
-    z-index: -1; /* Puts the video behind the text */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Video behind text */
 }
+
+/* Services Section */
 .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    // padding: 40px;
-    background-color:#B0E0E6;
-    font-family: 'Bert Sans ExtraBold', sans-serif;
-    
-    // .service {
-//     background-color: #F2F6FF;
-//     border: 1px solid #ddd;
-//     padding: 20px;
-//     margin: 11px;
-//     width: 27%; /* Slightly reduced width */
-//     height: 350px; /* Fixed height to make the boxes more square */
-//     text-align: left;
-//     color: #73B4B1;
-//     border-radius: 2%;
-//     border-right: 2px solid #73B4B1;
-//     border-left: 2px solid #73B4B1;
-//     font-family: 'Bert Sans ExtraBold', sans-serif;
-// }
-}
-// .payment-plan {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content:center;
-//     padding: 20px;
-//     background-color:#B0E0E6;
-//     font-family: 'Bert Sans ExtraBold', sans-serif;
-    
-    
-// }
-// h2{
-//     color: #327760;
-//     border-top: 2px solid  #73B4B1;
-// }
-.pa{
-    color: #001F3F;
-    border-bottom: 2px solid #6BC8A9;
-}
-.fa{
-    color: white;
-    margin-left: 9%;
-    // border-bottom: 2px solid #f6fffc;
-}
-.payment-plan {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
-    justify-content: center; /* Center items */
-    padding: 20px;
+    justify-content: center;
     background-color: #B0E0E6;
-}
-
-/* Individual payment plan box styling */
-.payment-plan-box {
-    background-color: #F2F6FF;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 11px;
-    width: 30%; /* Default width for larger screens */
-    text-align: left;
-    color: #73B4B1;
-    border-radius: 2%;
-    border-right: 2px solid #73B4B1;
-    border-left: 2px solid #73B4B1;
-}
-
-/* Responsive adjustments for payment plan boxes */
-@media (max-width: 1024px) {
-    .payment-plan-box {
-        width: 45%; /* Adjust width for tablets */
-    }
-}
-
-@media (max-width: 768px) {
-    .payment-plan-box {
-        width: 48%; /* Slightly reduced width for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .payment-plan-box {
-        width: 100%; /* Full width on mobile */
-    }
+    font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
 .service {
@@ -152,78 +72,54 @@ body {
     padding: 20px;
     margin: 11px;
     width: 30%;
-    // height: 10%;
-    text-align:left;
+    text-align: left;
     color: #73B4B1;
     border-radius: 2%;
-    border-right: 2px solid  #73B4B1;
-    border-left: 2px solid  #73B4B1;
-    font-family: 'Bert Sans ExtraBold', sans-serif;
-    
+    border-right: 2px solid #73B4B1;
+    border-left: 2px solid #73B4B1;
 }
 
+/* Payment Plan Section */
+.payment-plan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #B0E0E6;
+}
+
+.payment-plan-box {
+    background-color: #F2F6FF;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 11px;
+    width: 30%;
+    text-align: left;
+    color: #73B4B1;
+    border-radius: 2%;
+    border-right: 2px solid #73B4B1;
+    border-left: 2px solid #73B4B1;
+}
+
+/* Read More Button */
 .read-more-btn {
     display: inline-block;
     margin-top: 15px;
     margin-left: 68%;
-    padding: 0; /* Removed side padding for button */
-    color: #327760; /* Green text */
-    background-color: transparent; /* No background */
-    border: none; /* Removed border */
-    text-decoration: underline; /* Optional: underlined for clickable effect */
-    cursor: pointer; /* Pointer cursor to indicate clickability */
+    padding: 0;
+    color: #327760;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
     transition: color 0.3s ease;
-    border-left: 2px solid  #73B4B1;
+    border-left: 2px solid #73B4B1;
     padding-left: 3%;
-    font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
-
-
-/* Responsive */
-// @media (max-width: 768px) {
-//     .service {
-//         width: 45%;
-//     }
-// }
-
-// @media (max-width: 480px) {
-//     .service {
-//         width: 100%;
-//     }
-// }
-@media (max-width: 1024px) {
-    .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 45%; /* Adjust width to 45% for tablets */
-    }
-
-    .read-more-btn {
-        margin-left: 50%; /* Adjust button position */
-    }
-}
-
-@media (max-width: 768px) {
-    .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 48%; /* Stack boxes better on smaller screens */
-    }
-
-    .read-more-btn {
-        margin-left: 40%; /* Adjust button position */
-    }
-}
-
-@media (max-width: 480px) {
-    .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 100%; /* Full width on mobile */
-    }
-
-    .read-more-btn {
-        margin-left: 0; /* Button aligns naturally on mobile */
-        text-align: center;
-    }
-}
+/* Secret Page */
 .secret-page {
-    display: none; /* Initially hidden */
+    display: none;
     width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -231,8 +127,40 @@ body {
     border: 1px solid #ddd;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
-  }
-  
-  .show {
-    display: block; /* Display when .show is added */
-  }
+}
+
+.show {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .service, .coming-soon-box, .coming-soon-box-1 {
+        width: 45%;
+    }
+    .read-more-btn {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service, .coming-soon-box, .coming-soon-box-1 {
+        width: 48%;
+    }
+    .read-more-btn {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service, .coming-soon-box, .coming-soon-box-1 {
+        width: 100%;
+    }
+    .read-more-btn {
+        margin-left: 0;
+        text-align: center;
+    }
+    .payment-plan-box {
+        width: 100%;
+    }
+}
