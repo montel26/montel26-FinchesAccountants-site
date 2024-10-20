@@ -1,39 +1,46 @@
-import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { EmailService } from '../email.service';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { EmailService } from '../email.service';  // Import your EmailService
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  contactForm: FormGroup; // Define the contact form group
   notification: string = '';
   isNotificationVisible: boolean = false;
 
-  constructor(private emailService: EmailService) {}
+  constructor(private fb: FormBuilder, private emailService: EmailService) { // Inject the EmailService
+    this.contactForm = this.fb.group({
+      name: ['', Validators.required],
+      lastname: ['', Validators.required], // Include lastname field
+      email: ['', [Validators.required, Validators.email]], // Email field with validation
+      message: ['', Validators.required], // Message field with validation
+    });
+  }
 
-  onSubmit(contactForm: NgForm) {
-    if (contactForm.valid) {
-      const formData = {
-        name: contactForm.value.name,
-        lastname: contactForm.value.lastname,
-        email: contactForm.value.email,
-        message: contactForm.value.message,
-      };
+  ngOnInit(): void { }
 
-      // Simulate sending the email (you may want to use the actual service method)
-      this.emailService.sendEmail(formData).then(
+  onSubmit(): void {
+    if (this.contactForm.valid) {
+      const formValues = this.contactForm.value;
+
+      this.emailService.sendEmail(formValues).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
           this.showNotification('Your email has been sent successfully.');
-          contactForm.reset();
+          this.contactForm.reset(); // Reset the form
         },
         (error) => {
           console.error('FAILED...', error);
           this.showNotification('Failed to send message. Please try again later.');
         }
       );
+    } else {
+      console.log('Form is not valid');
+      // Optionally show validation errors to the user
     }
   }
 

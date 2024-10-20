@@ -1,7 +1,7 @@
 /* General Reset */
 * {
     margin: 0;
-    padding: 1%;
+    padding: 0.5%;
     box-sizing: border-box;
 }
 
@@ -21,20 +21,56 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Allow boxes to wrap when necessary */
     max-width: 3000px;
     overflow-x: auto; /* Horizontal scroll for small screens */
 }
 
 .coming-soon-box, .coming-soon-box-1 {
-    width: 300px;
+    width: 300px; /* Fixed width */
     height: 415px;
     background-color: #B0E0E6;
     border: 2px solid #F2F6FF;
     border-radius: 6%;
-    margin: 0 2%;
+    margin: 0 0.5%; /* Reduced margin between boxes */
     position: relative;
     overflow: hidden;
+}
+
+h2.pa {
+    position: absolute;  
+    top: 20px;
+    left: 10px;
+    color: lightblue;   /* Bright white text for higher contrast */
+    margin: 0;
+    font-size: 1.2rem;
+    z-index: 2;       
+    text-align: left; 
+    padding-top: 90%;    
+    border-radius: 4px;  
+    width: 90%;       
+    line-height: 1.5; 
+    font-weight: bold; 
+}
+
+.image-box {
+    width: 100%; /* Fill the width of the box */
+    height: 100%; /* Fill the height of the box */
+    object-fit: cover; /* Ensures the image covers the div without distortion */
+    border-radius: 6%; /* Matches the div's border radius */
+}
+
+.coming-soon-box h3, .coming-soon-box-1 h3, .coming-soon-box p, .coming-soon-box .price {
+    color: white;
+    margin-bottom: 15px; 
+}
+
+.coming-soon-box p {
+    line-height: 1.6; 
+}
+
+.coming-soon-box .price {
+    font-weight: bold;
 }
 
 .coming-soon-box-1 {
@@ -46,22 +82,11 @@ body {
     margin-left: 16%;
 }
 
-/* Video Box */
-.video-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Video behind text */
-}
-
 /* Services Section */
 .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: top;
     background-color: #B0E0E6;
     font-family: 'Bert Sans ExtraBold', sans-serif;
 }
@@ -69,8 +94,8 @@ body {
 .service {
     background-color: #F2F6FF;
     border: 1px solid #ddd;
-    padding: 20px;
-    margin: 11px;
+    padding: 30px;
+    margin: 10px; /* Reduced margin between service boxes */
     width: 30%;
     text-align: left;
     color: #73B4B1;
@@ -92,7 +117,7 @@ body {
     background-color: #F2F6FF;
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 11px;
+    margin: 10px; /* Reduced margin between payment plan boxes */
     width: 30%;
     text-align: left;
     color: #73B4B1;
@@ -136,7 +161,7 @@ body {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 45%;
+        width: 45%; /* Adjusted to allow wrapping */
     }
     .read-more-btn {
         margin-left: 50%;
@@ -145,7 +170,7 @@ body {
 
 @media (max-width: 768px) {
     .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 48%;
+        width: 48%; /* Allow two boxes per row on smaller screens */
     }
     .read-more-btn {
         margin-left: 40%;
@@ -154,13 +179,14 @@ body {
 
 @media (max-width: 480px) {
     .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 100%;
+        width: 100%; /* Full width on small screens */
     }
     .read-more-btn {
         margin-left: 0;
         text-align: center;
     }
     .payment-plan-box {
-        width: 100%;
+        width: 100%; /* Full width for payment plan boxes */
     }
 }
+

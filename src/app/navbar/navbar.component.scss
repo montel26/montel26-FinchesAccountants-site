@@ -1,11 +1,11 @@
-/* Navbar Styling */
+/* General Navbar Styling */
 .navbar {
   background-color: #FFFFF0; /* Ivory background */
-  padding: 0.5rem;
+  padding: 0.2rem; /* Reduced padding to make it thinner */
   display: flex;
-  justify-content: center; /* Center navbar items */
+  justify-content: center; /* Center items horizontally */
   align-items: center;
-  min-height: 50px;
+  min-height: 15px; /* Further reduce the height */
   position: fixed;
   top: 0;
   width: 100%; /* Full-width navbar */
@@ -13,82 +13,23 @@
   font-family: 'Bert Sans ExtraBold', sans-serif;
 }
 
-/* Navbar Logo */
+/* Navbar Logo (Center the logo) */
 .navbar-logo {
-  position: absolute;
-  left: 0; /* Align logo to the left */
-  width: 10%; /* Smaller logo size */
+  width: 5%; /* Adjust the size of the logo */
   height: auto; /* Maintain aspect ratio */
-  margin-left: 1rem; /* Space from the left edge */
 }
 
-/* Navbar Navigation */
-.navbar-nav {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item {
-  display: inline;
-  margin-left: 5%;
-  white-space: nowrap; /* Prevent text from wrapping */
-}
-
-/* Navbar Item Styling */
-.home {
-  color: #4169E1;
-}
-
-.nav-item p {
-  font-family: 'Bert Sans ExtraBold', sans-serif;
-  color: #001F3F;
-  transition: color 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.nav-item p:hover {
-  color: #4169E1;
-}
-
-.nav-item p.active {
-  color: #4169E1;
-  font-weight: bold;
-}
-
-/* Responsive Styling */
+/* Hide Navbar on Small Screens */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .nav-item {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
+    display: none; /* Hide navbar when screen width is 768px or smaller */
   }
 }
 
+/* Additional Responsive Adjustments for Very Small Screens */
 @media (max-width: 480px) {
-  .navbar {
-    padding: 1rem;
-  }
-
   .navbar-logo {
-    width: 30px; /* Smaller logo for small screens */
-    margin-left: 0; /* Remove margin for compact layout */
+    width: 30px; /* Adjust the size of the logo for very small screens */
   }
 }
-
-
-
 

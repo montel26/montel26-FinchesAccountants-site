@@ -1,5 +1,5 @@
 body {
-  background-color: #FFFFF0;
+  // background-color: #FFFFF0;
   background-size: cover;
   padding: 0;
   height: 100%;
@@ -7,23 +7,40 @@ body {
   justify-content: flex-start;
   margin-left: 6%;
   flex-direction: column; /* Allow stacking elements for smaller screens */
-  font-family: 'Bert Sans ExtraBold', sans-serif;
+  font-family: 'Bert Sans ExtraBold', sans-serif; 
+}
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;  /* Prevents scrolling if the image overflows */
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // object-position: top;
+  object-fit: cover; /* Ensures the image covers the div without distortion */
+  z-index: -1;       /* Keeps the image in the background */
 }
 
 .centered-text {
   font-size: 2.5rem; /* Large screens */
   font-weight: bold;
-  text-align: left;
+  text-align: right; /* Align text to the right */
   line-height: 1.5;
-  color: #001F3F;
+  color: #2f6734;
   padding: 0 1rem;
   margin-top: 12%;
-  margin-left: 0%;
+  margin-left: auto; /* Use auto margin to push text to the right */
+  margin-right: 0; /* Reset any right margin */
   white-space: nowrap;
 }
 
 .about {
-  margin-top: 25%;
+  margin-top: 0%;
 }
 
 .app-navbar {
