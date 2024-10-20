@@ -17,8 +17,9 @@
     padding: 2rem;
     font-family: 'Bert Sans ExtraBold', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 96.7%; /* Set width to 100% */
+    width: 96%; /* Set width to 100% */
     border-radius: 8px;
+    margin-bottom: 0rem; /* Add bottom margin for separation */
 }
 
 /* Content Layout */
@@ -32,7 +33,7 @@
 /* Form Section */
 .form {
     width: 50%; /* Adjust width of the form section */
-    padding-left: 18%;
+    padding-left: 10%;
     padding-top: 3%;
     margin-bottom: 2rem;
 }
@@ -40,23 +41,22 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    // padding-left: -90%;
+    padding-right: 17%;
 }
 
+/* Form Row Styles */
 .form-row {
     display: flex;
     justify-content: flex-start;
-    // margin-bottom: 0rem;
-    // margin-left: 0%;
 }
 
 /* Form Group Styles */
 .form-group {
-    width: 0%; /* Keep the width as is */
     margin-bottom: 1rem;
     margin-left: 1%;
 }
 
+/* Input and Textarea Styles */
 .form-group label {
     margin-bottom: 5px; /* Reduced margin to bring the label closer to the input */
     display: block;
@@ -66,7 +66,7 @@
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 100%; /* Make inputs full width */
     border: 2px solid #001f3f; /* Border color */
     border-radius: 5px;
     background-color: #F3E493; /* Same background as the section */
@@ -86,28 +86,19 @@
     margin-right: 0; /* Remove the right margin for the last field */
 }
 
-.form-group input {
-    height: 51px; /* Maintain height */
-}
-
-.form-group textarea {
-    height: 150px; /* Textarea height */
-    resize: none; /* Disable resizing */
-}
-
 /* Specific Field Widths */
 #name,
 #lastname {
-    width: 296px;
+    width: 100%; /* Make both name fields full width to match */
 }
 
 #email {
-    width: 611px;
+    width: 100%; /* Adjusted for full width */
     height: 51px;
 }
 
 #message {
-    width: 611px;
+    width: 100%; /* Adjusted for full width */
     height: 150px;
 }
 
@@ -141,7 +132,7 @@
 
 /* Text Content Section */
 .text-content {
-    padding-right: 10%;
+    padding-right: 1%;
     width: 45%; /* Adjust width of the text section */
 }
 
@@ -154,6 +145,11 @@
 .final {
     padding-bottom: 2%;
     border-bottom: 2px solid #001F3F;
+}
+
+/* Add some margin to the strategy section */
+.strategy {
+    margin-top: 2rem; /* Add margin to separate from the form */
 }
 
 /* Responsive Styling for Mobile */
@@ -219,3 +215,4 @@
         opacity: 1;
     }
 }
+
