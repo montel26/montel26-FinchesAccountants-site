@@ -5,7 +5,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: flex-start;
-  margin-left: 6%;
+  margin-right: 6%;
   flex-direction: column; /* Allow stacking elements for smaller screens */
   font-family: 'Bert Sans ExtraBold', sans-serif; 
 }
@@ -33,6 +33,7 @@ body {
   line-height: 1.5;
   color: #2f6734;
   padding: 0 1rem;
+  padding-right: 4%;
   margin-top: 12%;
   margin-left: auto; /* Use auto margin to push text to the right */
   margin-right: 0; /* Reset any right margin */
