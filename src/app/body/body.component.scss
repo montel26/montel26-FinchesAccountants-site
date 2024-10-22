@@ -9,6 +9,41 @@ body {
   flex-direction: column; /* Allow stacking elements for smaller screens */
   font-family: 'Bert Sans ExtraBold', sans-serif; 
 }
+.navbar {
+  background-color: #a7d4e2; /* Ivory background */
+  padding: 0.2rem; /* Reduced padding to make it thinner */
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  min-height: 15px; /* Further reduce the height */
+  position: fixed;
+  top: 0;
+  width: 100%; /* Full-width navbar */
+  z-index: 1000;
+  font-family: 'Bert Sans ExtraBold', sans-serif;
+}
+
+/* Navbar Logo (Center the logo) */
+.navbar-logo {
+  width: 5%; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Hide Navbar on Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide navbar when screen width is 768px or smaller */
+  }
+}
+
+/* Additional Responsive Adjustments for Very Small Screens */
+@media (max-width: 480px) {
+  .navbar-logo {
+    width: 30px; /* Adjust the size of the logo for very small screens */
+  }
+}
+
+
 .background {
   position: relative;
   width: 100%;

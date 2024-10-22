@@ -8,7 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 import { FormsModule } from '@angular/forms'
 
 @NgModule({
@@ -18,8 +18,7 @@ import { FormsModule } from '@angular/forms'
     AboutComponent,
     ServicesComponent,
     ContactComponent,
-    FooterComponent,
-    NavbarComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
