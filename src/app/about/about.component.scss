@@ -24,10 +24,35 @@ h1{
 .svg-icon img {
     filter: invert(85%) sepia(10%) saturate(350%) hue-rotate(330deg); /* Approximation of #F7E7CE */
 }
+.banners {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    // width: 100%; /* Subtract 30px on both sides */
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-left: 24.5%;
+    padding-right: 6%; /* Remove padding to avoid shifting */
+    gap: 20px; /* Add space between images */
+}
+
+.banners img {
+    width: 408px;
+    height: 116px;
+    object-fit: contain; /* Keeps the images properly scaled */
+}
 
 .about {
     margin-left: 5%; /* Moves the text slightly to the right */
     font-weight: bold;
+}
+h1{
+    margin-left: 2%;
+}
+h3{
+    margin-left: 42%;
 }
 
 p {
@@ -63,7 +88,7 @@ p {
     line-height: 1.5;
     padding: 0 15%;
     text-align: left;
-    white-space:nowrap;
+    white-space: nowrap; 
 }
 .heading {
     margin-left: 20%;
@@ -72,6 +97,21 @@ p {
 
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
+    .banners {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        height: auto;
+        padding: 20px;
+    }
+
+    .banners img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Add space between stacked images */
+    }
+
+    .banners img:last-child {
+        margin-bottom: 0; /* Remove margin from last image */
+    }
     .about, .heading {
         margin-left: 10%;
     }
@@ -95,5 +135,20 @@ p {
 
     .content-section, .about-firm {
         padding: 1rem; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .cloud-solutions p {
+        width: 90%; /* Wider width for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size */
+        padding: 0 10%; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cloud-solutions p {
+        font-size: 0.8rem; /* Even smaller font size for very small screens */
+        padding: 0 15%; /* Adjust padding for mobile */
     }
 }

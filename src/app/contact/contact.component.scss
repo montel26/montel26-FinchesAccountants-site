@@ -12,7 +12,7 @@
 
 /* Contact Section Styling */
 .contact-section {
-    background-color: #F3E493; /* Background color for the section */
+    background-color: #a7d4e2; /* Background color for the section */
     color: #344966; /* Text color */
     padding: 2rem;
     font-family: 'Bert Sans ExtraBold', sans-serif;
@@ -27,13 +27,13 @@
     display: flex; /* Flexbox layout */
     justify-content: space-between;
     align-items: flex-start;
-    padding: 3%;
+    padding: 0%;
 }
 
 /* Form Section */
 .form {
     width: 50%; /* Adjust width of the form section */
-    padding-left: 10%;
+    padding-left: 30%;
     padding-top: 3%;
     margin-bottom: 2rem;
 }
@@ -69,7 +69,7 @@
     width: 100%; /* Make inputs full width */
     border: 2px solid #001f3f; /* Border color */
     border-radius: 5px;
-    background-color: #F3E493; /* Same background as the section */
+    background-color: #ffffff; /* Same background as the section */
     color: #344966; /* Text color inside input fields */
     box-sizing: border-box;
     font-size: 1rem;
@@ -78,7 +78,7 @@
 
 /* Form Row Adjustments */
 .form-row .form-group {
-    width: 46%; /* Adjust width to bring fields closer together */
+    width: 100%; /* Adjust width to bring fields closer together */
     margin-left: 1%; /* Reduce the right margin */
 }
 
@@ -113,7 +113,7 @@
     cursor: pointer; /* Pointer on hover */
     font-size: 1rem; /* Font size */
     margin-top: 1rem; /* Margin at the top */
-    margin-left: 67%;
+    margin-left: 90%;
 }
 
 .contact-form button:hover {
@@ -215,4 +215,3 @@
         opacity: 1;
     }
 }
-

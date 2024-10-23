@@ -8,7 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+// import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'
 
 @NgModule({
@@ -23,7 +24,9 @@ import { FormsModule } from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
+    // HttpClientModule
   ],
   providers: [
     provideClientHydration()
