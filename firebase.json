@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist\\finch-app\\browser",
+    "public": "dist/finch-app",
     "ignore": [
       "firebase.json",
       "**/.*",
