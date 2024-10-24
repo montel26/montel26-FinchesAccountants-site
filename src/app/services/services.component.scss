@@ -1,192 +1,90 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0.5%;
-    box-sizing: border-box;
+body{
+    background-color: #001F3F;
+    overflow-x: hidden;
+}
+.service-carousel {
+    overflow: hidden; /* Hide the overflowing service boxes */
+    width: 100%; /* Ensure it takes the full width */
 }
 
-body {
-    font-family: Arial, sans-serif;
+.OFFERINGS{
+    // color:#001F3F;
+    margin-left: 44%;
+    // border-bottom: 2px solid #F7E7CE;
+    text-decoration: 2px solid underline;
 }
-
-/* Plan Section Styling */
-.plan h1 {
-    color: #327760;
-    border-top: 2px solid #73B4B1;
-    margin-bottom: 20px;
+h1{
+    margin-left: 44%;
+    // background-color: #001F3F;
+    text-decoration: 2px solid underline;
 }
-
-/* Coming Soon Boxes */
-.coming-soon-container {
+.service-container {
+    // background-color: #001F3F;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow boxes to wrap when necessary */
-    max-width: 3000px;
-    overflow-x: auto; /* Horizontal scroll for small screens */
-}
-
-.coming-soon-box, .coming-soon-box-1 {
-    width: 300px; /* Fixed width */
-    height: 415px;
-    background-color: #B0E0E6;
-    border: 2px solid #F2F6FF;
-    border-radius: 6%;
-    margin: 0 0.5%; /* Reduced margin between boxes */
-    position: relative;
-    overflow: hidden;
-}
-
-h2.pa {
-    position: absolute;  
-    top: 20px;
-    left: 10px;
-    color: lightblue;   /* Bright white text for higher contrast */
-    margin: 0;
-    font-size: 1.2rem;
-    z-index: 2;       
-    text-align: left; 
-    padding-top: 90%;    
-    border-radius: 4px;  
-    width: 90%;       
-    line-height: 1.5; 
-    font-weight: bold; 
-}
-
-.image-box {
-    width: 100%; /* Fill the width of the box */
-    height: 100%; /* Fill the height of the box */
-    object-fit: cover; /* Ensures the image covers the div without distortion */
-    border-radius: 6%; /* Matches the div's border radius */
-}
-
-.coming-soon-box h3, .coming-soon-box-1 h3, .coming-soon-box p, .coming-soon-box .price {
-    color: white;
-    margin-bottom: 15px; 
-}
-
-.coming-soon-box p {
-    line-height: 1.6; 
-}
-
-.coming-soon-box .price {
-    font-weight: bold;
-}
-
-.coming-soon-box-1 {
-    border-color: #6BC8A9;
-}
-
-.coming-soon-box h3, .coming-soon-box-1 h3 {
-    color: white;
-    margin-left: 16%;
-}
-
-/* Services Section */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: top;
-    background-color: #B0E0E6;
-    font-family: 'Bert Sans ExtraBold', sans-serif;
+    justify-content: flex-start;
+    // overflow-x: hidden;
+    animation: windAround 78s linear infinite; /* Continuous sliding */
 }
 
 .service {
     background-color: #F2F6FF;
     border: 1px solid #ddd;
     padding: 30px;
-    margin: 10px; /* Reduced margin between service boxes */
-    width: 30%;
+    margin: 0 10px;
+    width: 15%; /* Adjust width to fit more in the container */
     text-align: left;
     color: #73B4B1;
     border-radius: 2%;
     border-right: 2px solid #73B4B1;
     border-left: 2px solid #73B4B1;
+    flex-shrink: 0; /* Prevents shrinking */
 }
-
-/* Payment Plan Section */
-.payment-plan {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background-color: #B0E0E6;
-}
-
-.payment-plan-box {
-    background-color: #F2F6FF;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px; /* Reduced margin between payment plan boxes */
-    width: 30%;
-    text-align: left;
-    color: #73B4B1;
+.service-container img {
+    width: 35rem; /* Set width to 100px */
+    height: 25rem; /* Set height to 100px */
+    object-fit: contain; /* Ensure the image scales properly */
+    margin: 0px 0; /* Add some margin around the image */
     border-radius: 2%;
-    border-right: 2px solid #73B4B1;
-    border-left: 2px solid #73B4B1;
+
+}
+.service-divider {
+    width: 15rem; /* Set width to 100px */
+    height: 25rem; /* Set height to 100px */
+    object-fit: cover; /* Ensure the video scales properly */
+    margin: 0px 0; /* Add some margin around the video */
+    border-radius: 2%; /* Keep the rounded corners */
+}
+.plans-container {
+    display: flex; /* Aligns the divs in a row */
+    justify-content: flex-start; /* Aligns items to the start */
+    flex-wrap: wrap; /* Allows the divs to wrap on smaller screens */
+    margin: 20px 0; /* Margin only on the top and bottom */
+    background-color: #001F3F; /* Background color for the section */
+    padding: 20px; /* Padding for the container */
 }
 
-/* Read More Button */
-.read-more-btn {
-    display: inline-block;
-    margin-top: 15px;
-    margin-left: 68%;
-    padding: 0;
-    color: #327760;
-    background-color: transparent;
-    border: none;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    border-left: 2px solid #73B4B1;
-    padding-left: 3%;
+.plan {
+    background-color: #F2F6FF; /* Light background color */
+    border: 1px solid #ddd; /* Border around the div */
+    padding: 20px; /* Padding inside the div */
+    border-radius: 5px; /* Rounded corners */
+    text-align: left; /* Align text to the left */
+    color: #73B4B1; /* Text color */
+    flex: 1 1 200px; /* Grow and shrink with a base width of 200px */
+    margin: 10px; /* Margin around each plan for spacing */
+    min-width: 250px; /* Minimum width for better responsiveness */
+    box-sizing: border-box; /* Includes padding and border in width */
 }
 
-/* Secret Page */
-.secret-page {
-    display: none;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
 
-.show {
-    display: block;
-}
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 45%; /* Adjusted to allow wrapping */
+@keyframes windAround {
+    from {
+        transform: translateX(100%); /* Start from the initial position */
     }
-    .read-more-btn {
-        margin-left: 50%;
+    to {
+        transform: translateX(-150%); /* Move to the left, pushing out */
     }
 }
 
-@media (max-width: 768px) {
-    .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 48%; /* Allow two boxes per row on smaller screens */
-    }
-    .read-more-btn {
-        margin-left: 40%;
-    }
-}
-
-@media (max-width: 480px) {
-    .service, .coming-soon-box, .coming-soon-box-1 {
-        width: 100%; /* Full width on small screens */
-    }
-    .read-more-btn {
-        margin-left: 0;
-        text-align: center;
-    }
-    .payment-plan-box {
-        width: 100%; /* Full width for payment plan boxes */
-    }
-}
 
