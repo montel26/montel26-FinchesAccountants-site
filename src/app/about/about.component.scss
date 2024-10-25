@@ -8,21 +8,23 @@ body {
 
 .content-section {
     background-color: #001F3F; /* Background color only for the section */
-    padding: 2rem; /* Add padding for the section */
+    padding: 0rem; /* Add padding for the section */
     margin-top: 0%;
+    overflow-wrap: normal;
 }
 h1{
-    padding-left: 30%;
+    // padding-left: 30%;
 }
 /* Icon Position within Section */
 .cloud-section {
-    position: relative; /* Enable positioning within this section */
+    position: relative;
+    width: 100vw; /* Enable positioning within this section */
 }
 
 .section-icon {
-    position: absolute;
-    bottom: 1rem; /* Position icon at the bottom of the section */
-    left: 1rem; /* Position icon to the left of the section */
+    position: relative;
+    // bottom: 1rem; /* Position icon at the bottom of the section */
+    // left: 1rem; /* Position icon to the left of the section */
     width: 90px; /* Smaller size */
     height: auto;
     z-index: 10;
@@ -47,7 +49,7 @@ h1{
     background-color: #ffffff;
     margin: 0 auto;
     margin-left: 24.5%;
-    padding-right: 6%; /* Remove padding to avoid shifting */
+    // padding-right: 6%; /* Remove padding to avoid shifting */
     gap: 20px; /* Add space between images */
 }
 
@@ -58,15 +60,18 @@ h1{
 }
 
 .about {
-    margin-left: 5%; /* Moves the text slightly to the right */
+    // margin-left: 5%; /* Moves the text slightly to the right */
     font-weight: bold;
+    overflow-wrap: normal;
+    overflow: scroll;
 }
 h1{
-    margin-left: 2%;
+    // margin-left: 2%;
+    text-align: center;
 }
-h3{
-    margin-left: 42%;
-}
+// h3{
+//     margin-left: 42%;
+// }
 
 p {
     border-top: 2px solid #F7E7CE;
@@ -84,10 +89,12 @@ p {
     background-color: #E0E0E0; /* Light grey background */
     padding: 2%; /* Add padding for spacing */
     margin-top: 0rem;
+    width: 100vw;
 }
 .cloud-solutions h1 {
     color: #001F3F; /* Dark heading color */
-    padding-left: 30%;
+    // padding-left: 30%;
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -95,11 +102,11 @@ p {
 .cloud-solutions p {
     border-top: 2px solid #333333;
     border-bottom: 2px solid #333333;
-    width: 30%;
+    // width: 30%;
     color: #333333; /* Dark grey text color */
     font-size: 1rem;
     line-height: 1.5;
-    padding: 0 15%;
+    // padding: 0 1%;
     text-align: left;
     white-space: nowrap; 
 }
@@ -113,7 +120,7 @@ p {
     .banners {
         flex-direction: column; /* Stack images vertically on smaller screens */
         height: auto;
-        padding: 20px;
+        // padding: 20px;
     }
 
     .banners img {
@@ -126,7 +133,7 @@ p {
         margin-bottom: 0; /* Remove margin from last image */
     }
     .about, .heading {
-        margin-left: 10%;
+        // margin-left: 10%;
     }
 
     p {
@@ -139,9 +146,9 @@ p {
     // .about, .heading {
     //     margin-left: 5%;
     // }
-    .about{
-        width: 40vh;
-    }
+    // .about{
+    //     width: 42vh;
+    // }
 
     p {
         width: 100%;
@@ -152,11 +159,11 @@ p {
         margin-left: 0;
     }
     .content-section, .about-firm {
-        padding: 1rem; /* Reduce padding for smaller screens */
+        // padding-right: 1rem; /* Reduce padding for smaller screens */
     }
    
     .cloud-section, .content-section{
-        width: 40vh;
+        // width: 40vh;
     }
     .cloud-solutions p{
         // text-wrap: nowrap;
@@ -172,13 +179,14 @@ p {
     .cloud-solutions p {
         width: 90%; /* Wider width for smaller screens */
         font-size: 0.9rem; /* Slightly smaller font size */
-        padding: 0 10%; /* Adjust padding for smaller screens */
+        // padding: 0 10%; /* Adjust padding for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .cloud-solutions p {
         font-size: 0.8rem; /* Even smaller font size for very small screens */
-        padding: 0 15%; /* Adjust padding for mobile */
+        // padding: 0 15%; /* Adjust padding for mobile */
     }
+
 }

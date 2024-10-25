@@ -1,11 +1,11 @@
 body {
   // background-color: #FFFFF0;
-  background-size:auto;
+  // background-size:auto;
   padding: 0;
   height: 100%;
   display: flex;
   justify-content: flex-start;
-  margin-right: 6%;
+  // margin-right: 6%;
   flex-direction: column; /* Allow stacking elements for smaller screens */
   font-family: 'Bert Sans ExtraBold', sans-serif; 
 }
@@ -150,6 +150,6 @@ body {
   body, html {
     justify-content: center;
     align-items: flex-start; /* Align items to the top on mobile */
-    padding: 1rem; /* Add padding */
+    // padding: 1rem; /* Add padding */
   }
 }

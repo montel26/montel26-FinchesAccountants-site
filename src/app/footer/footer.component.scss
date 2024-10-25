@@ -62,9 +62,9 @@ p, li {
 }
 
 .banners {
-    display: flex;
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Center the images vertically */
+    // display: flex;
+    // justify-content: center; /* Center the images horizontally */
+    // align-items: center; /* Center the images vertically */
     // width: 100%; /* Subtract 30px on both sides */
     width: 100%;
     height: 100%;
@@ -84,7 +84,7 @@ p, li {
     .banners {
         flex-direction: column; /* Stack images vertically on smaller screens */
         height: auto;
-        padding: 20px;
+        // padding: 20px;
         // width: 40vh;
         // display: block;
     }
@@ -131,8 +131,8 @@ p, li {
 
 @media (max-width: 480px) {
     footer.content-section {
-        padding: 2rem; /* Reduce padding for mobile */
-        width: 40vh;
+        // padding: 2rem; /* Reduce padding for mobile */
+        // width: 40vh;
     }
 
     h2 {
@@ -149,8 +149,8 @@ p, li {
     }
 
     .banners {
-        padding: 2rem; /* Further reduce padding */
-        width: 40vh;
+        // padding: 2rem; /* Further reduce padding */
+        // width: 40vh;
         margin: 0;
     }
     .banners img{

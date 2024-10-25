@@ -14,11 +14,11 @@
 .contact-section {
     background-color: #a7d4e2; /* Background color for the section */
     color: #344966; /* Text color */
-    padding: 2rem;
+    // padding: 2rem;
     font-family: 'Bert Sans ExtraBold', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: auto; /* Set width to 100% */
-    border-radius: 8px;
+    // border-radius: 8px;
     margin-bottom: 0rem; /* Add bottom margin for separation */
 }
 
@@ -28,6 +28,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 0%;
+    width: 100%;
 }
 
 /* Form Section */
@@ -155,12 +156,14 @@
 /* Responsive Styling for Mobile */
 @media (max-width: 768px) {
     .contact-section {
-        padding: 1.5rem;
+        // padding: 1.5rem;
     }
 
     .content {
         flex-direction: column; /* Stack the form and text content vertically */
         padding: 2%;
+        width: 100%;
+
     }
 
     .form {
@@ -196,6 +199,16 @@
         width: 40vh;
         // margin-left: 0.5rem;
     }
+}
+
+@media (max-width: 480px) {
+    .contact-section{
+        width: 42vh;
+        // margin-left: 0.5rem;
+    }
+    // .form{
+    //     margin: 10vh;
+    // }
 }
 
 

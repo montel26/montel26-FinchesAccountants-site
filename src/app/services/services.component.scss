@@ -4,7 +4,7 @@ body {
 }
 
 .service-carousel {
-    width: 100%; /* Ensure it takes the full width */
+    width: 100vw; /* Ensure it takes the full width */
 }
 
 .OFFERINGS {
@@ -20,37 +20,46 @@ h1 {
 
 .service-container {
     display: flex;
-    justify-content: flex-start;
-    animation: windAround 78s linear infinite; /* Continuous sliding */
-    flex-wrap: nowrap; /* Keep everything in one row */
+    flex-direction: row;
+    overflow: scroll;
+    width: 100vw;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    // padding: 100px;
+    // flex-wrap: wrap;
+/*    animation: windAround 78s linear infinite;  Continuous sliding */
+   /* flex-wrap: nowrap;  Keep everything in one row */
 }
 
 .service {
     background-color: #F2F6FF;
     border: 1px solid #ddd;
-    padding: 30px;
-    margin: 0 10px;
-    width: 15%; /* Fixed width on large screens */
+    // padding: 30px;
+    // margin: 0 10px;
+    width: 20vw; /* Fixed width on large screens */
     text-align: left;
     color: #73B4B1;
     border-radius: 2%;
     border-right: 2px solid #73B4B1;
     border-left: 2px solid #73B4B1;
-    flex-shrink: 0; /* Prevent shrinking */
-    min-width: 300px; /* Minimum width to keep layout consistent */
+    min-width: 20vw;
+    // margin-left: 10%;
+    // margin-right: 10%;
+    // flex-shrink: 0; /* Prevent shrinking */
+    // min-width: 300px; /* Minimum width to keep layout consistent */
 }
 
-.service-container img {
-    width: 35rem;
-    height: 25rem;
-    object-fit: contain;
-    margin: 0px 0;
-    border-radius: 2%;
-}
+// .service-container img {
+//     // width: 35rem;
+//     height: 25rem;
+//     object-fit: contain;
+//     margin: 0px 0;
+//     border-radius: 2%;
+// }
 
 .service-divider {
-    width: 15rem;
-    height: 25rem;
+    width: 20vh;
+    height: auto;
     object-fit: cover;
     margin: 0px 0;
     border-radius: 2%;
@@ -60,9 +69,9 @@ h1 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 20px 0;
+    // margin: 20px 0;
     background-color: #001F3F;
-    padding: 20px;
+    // padding: 20px;
 }
 
 .plan {
@@ -74,8 +83,17 @@ h1 {
     color: #73B4B1;
     flex: 1 1 200px;
     margin: 10px;
-    min-width: 250px;
+    // min-width: 250px;
     box-sizing: border-box;
+}
+
+.services {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;/* Further reduced padding for spacing */
+    width: 100vw;
 }
 
 /* Animation for continuous sliding */
@@ -91,28 +109,33 @@ h1 {
 /* Responsive tweaks for smaller screens */
 @media (max-width: 768px) {
     .service {
-        width: 30%; /* Allow more space per service block */
-        min-width: 200px; /* Set a smaller minimum width */
+        width: 30vw; /* Allow more space per service block */
+        // min-width: 200px; /* Set a smaller minimum width */
     }
 }
 
 @media (max-width: 480px) {
-    .service {
-        width: 45%; /* Larger width for small screens */
-        min-width: 150px; /* Further reduction in minimum width */
-    }
-    .plans-container{
-        width: 40vh;
-        // flex-direction: column;
-        display: block;
+    
+    .plans-container, .service-container{
+        width: 100vw;
+        flex-direction: column;
+        // display: block;
     }
     body h1{
         width: 40vh;
     }
     .service {
-        width: 40vh;
+        width: 100vw;
+    }
+    .slide-in{
+        margin: 10px 0;
     }
     .service-divider{
-        width: auto;
+        width: 20vw;
+        display: none;
+    }
+
+    .service-carousel{
+        width: 100vh;
     }
 }
