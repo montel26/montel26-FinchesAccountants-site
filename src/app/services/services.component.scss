@@ -8,13 +8,14 @@ body {
 }
 
 .OFFERINGS {
-    margin-left: 44%;
+    // margin-left: 44%;
     text-decoration: 2px solid underline;
 }
 
 h1 {
-    margin-left: 44%;
+    // margin-left: 44%;
     text-decoration: 2px solid underline;
+    text-align: center;
 }
 
 .service-container {
@@ -95,9 +96,23 @@ h1 {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .service {
         width: 45%; /* Larger width for small screens */
         min-width: 150px; /* Further reduction in minimum width */
+    }
+    .plans-container{
+        width: 40vh;
+        // flex-direction: column;
+        display: block;
+    }
+    body h1{
+        width: 40vh;
+    }
+    .service {
+        width: 40vh;
+    }
+    .service-divider{
+        width: auto;
     }
 }

@@ -136,8 +136,11 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
-    .about, .heading {
-        margin-left: 5%;
+    // .about, .heading {
+    //     margin-left: 5%;
+    // }
+    .about{
+        width: 40vh;
     }
 
     p {
@@ -145,9 +148,23 @@ p {
         padding-top: 5%;
         padding-bottom: 5%;
     }
-
+    h1{
+        margin-left: 0;
+    }
     .content-section, .about-firm {
         padding: 1rem; /* Reduce padding for smaller screens */
+    }
+   
+    .cloud-section, .content-section{
+        width: 40vh;
+    }
+    .cloud-solutions p{
+        // text-wrap: nowrap;
+    //     word-break: break-all;
+    // white-space: normal;
+    white-space: normal;
+    overflow-wrap: break-word;
+    width: 40vw;
     }
 }
 

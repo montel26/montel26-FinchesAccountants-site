@@ -8,13 +8,13 @@ footer.content-section {
     
 }
 
-.footer {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center the items */
-    align-items: flex-start; /* Align items at the start */
-    font-family: 'Bert Sans ExtraBold', sans-serif;
-}
+// .footer {
+//     display: flex; /* Use flexbox for layout */
+//     flex-wrap: wrap; /* Allow items to wrap */
+//     justify-content: center; /* Center the items */
+//     align-items: flex-start; /* Align items at the start */
+//     font-family: 'Bert Sans ExtraBold', sans-serif;
+// }
 .footer {
     display: flex;
     justify-content: space-around; /* Distribute items evenly */
@@ -74,21 +74,23 @@ p, li {
     gap: 20px; /* Add space between images */
 }
 
-.banners img {
-    width: 408px;
-    height: 116px;
-    object-fit: contain; /* Keeps the images properly scaled */
-}
+// .banners img {
+//     width: 100% ;
+//     height: auto;
+//     object-fit: contain; /* Keeps the images properly scaled */
+// }
 
-@media (max-width: 768px) {
+@media (max-width: 635px) {
     .banners {
         flex-direction: column; /* Stack images vertically on smaller screens */
         height: auto;
         padding: 20px;
+        // width: 40vh;
+        // display: block;
     }
 
     .banners img {
-        width: 100%;
+        width: 40vw;
         height: auto;
         margin-bottom: 20px; /* Add space between stacked images */
     }
@@ -129,7 +131,8 @@ p, li {
 
 @media (max-width: 480px) {
     footer.content-section {
-        padding: 0.5rem; /* Reduce padding for mobile */
+        padding: 2rem; /* Reduce padding for mobile */
+        width: 40vh;
     }
 
     h2 {
@@ -142,10 +145,16 @@ p, li {
     
     .contact-info, .services, .address {
         flex: 1 1 100%; /* Each section takes full width on mobile */
-        padding: 0.5rem; /* Add some padding for spacing */
+       /* padding: 0.5rem;  Add some padding for spacing */
     }
 
     .banners {
-        padding: 10px; /* Further reduce padding */
+        padding: 2rem; /* Further reduce padding */
+        width: 40vh;
+        margin: 0;
+    }
+    .banners img{
+        width: 40vw;
+        height: auto;
     }
 }
