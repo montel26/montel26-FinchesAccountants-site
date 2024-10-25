@@ -19,7 +19,9 @@ body {
   z-index: 1000;
   display: none;
 }
-
+// .background-image{
+//   transform: translateY(-50%);
+// }
 /* Responsive Adjustments */
 @media (max-width: 600px) {
   /* Adjust logo size for tablets */
@@ -34,7 +36,7 @@ body {
     width: 100px;
   }
   .background{
-    width: 40vh;
+    width: 40vb;
   }
   .background img{
     width: auto;
