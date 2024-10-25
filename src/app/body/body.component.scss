@@ -9,19 +9,32 @@ body {
   flex-direction: column; /* Allow stacking elements for smaller screens */
   font-family: 'Bert Sans ExtraBold', sans-serif; 
 }
-.navbar {
-  background-color: #a7d4e2; /* Ivory background */
-  padding: 0.2rem; /* Reduced padding to make it thinner */
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center;
-  min-height: 15px; /* Further reduce the height */
-  position: fixed;
-  top: 0;
-  width: 100%; /* Full-width navbar */
+/* Logo Position */
+.logo-icon {
+  position: absolute;
+  top: 0rem;
+  left: 1rem; /* Position logo in the top-left corner */
+  width: 300px; /* Increased size */
+  height: auto;
   z-index: 1000;
-  font-family: 'Bert Sans ExtraBold', sans-serif;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Adjust logo size for tablets */
+  .logo-icon {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce logo size for mobile */
+  .logo-icon {
+    width: 100px;
+  }
+}
+
+
 
 /* Navbar Logo (Center the logo) */
 .navbar-logo {
@@ -42,6 +55,7 @@ body {
     width: 30px; /* Adjust the size of the logo for very small screens */
   }
 }
+
 
 
 .background {
