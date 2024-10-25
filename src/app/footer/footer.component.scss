@@ -15,6 +15,18 @@ footer.content-section {
     align-items: flex-start; /* Align items at the start */
     font-family: 'Bert Sans ExtraBold', sans-serif;
 }
+.footer {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
+}
+
+.footer-icon {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 0.5rem; /* Add some spacing around the icon */
+}
+
 
 .contact-info, .services, .address {
     flex: 0 0 40%; /* Each section will occupy 40% of the width */

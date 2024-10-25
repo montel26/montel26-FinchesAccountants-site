@@ -14,6 +14,19 @@ body {
 h1{
     padding-left: 30%;
 }
+/* Icon Position within Section */
+.cloud-section {
+    position: relative; /* Enable positioning within this section */
+}
+
+.section-icon {
+    position: absolute;
+    bottom: 1rem; /* Position icon at the bottom of the section */
+    left: 1rem; /* Position icon to the left of the section */
+    width: 90px; /* Smaller size */
+    height: auto;
+    z-index: 10;
+}
 .svg-icon {
     float: left; /* Keep SVG floated to the left */
     margin-top: 7%;
