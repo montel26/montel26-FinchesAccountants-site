@@ -13,7 +13,7 @@ body {
     overflow-wrap: normal;
 }
 h1{
-    // padding-left: 30%;
+    color: #ffffff;
 }
 /* Icon Position within Section */
 .cloud-section {
@@ -63,7 +63,20 @@ h1{
     // margin-left: 5%; /* Moves the text slightly to the right */
     font-weight: bold;
     overflow-wrap: normal;
-    overflow: scroll;
+    // overflow: scroll;
+}
+.about p{
+    border-top: 2px solid #F7E7CE;
+    color: #ffffff;
+    padding-left: 10%;
+    width: 48%; /* Shortens the length of the borders */
+    padding-top: 2%;
+    margin: 0 auto;
+    font-weight: bold;
+    border-bottom: 2px solid #F7E7CE;
+    padding-bottom: 2%;
+    white-space: nowrap;
+    font-size: 18px;
 }
 h1{
     // margin-left: 2%;
@@ -74,25 +87,25 @@ h1{
 // }
 
 p {
-    border-top: 2px solid #F7E7CE;
+    // border-top: 2px solid #F7E7CE;
     padding-left: 10%;
-    width: 50%; /* Shortens the length of the borders */
-    padding-top: 1%;
+    width: 48%; /* Shortens the length of the borders */
+    padding-top: 0%;
     margin: 0 auto;
     font-weight: bold;
-    border-bottom: 2px solid #F7E7CE;
-    padding-bottom: 2%;
+    // border-bottom: 2px solid #F7E7CE;
+    padding-bottom: 0%;
     white-space: nowrap;
     font-size: 18px; /* Increase the font size for better readability */
 }
 .cloud-section {
-    background-color: #E0E0E0; /* Light grey background */
+    background-color: #001F3F; /* Light grey background */
     padding: 2%; /* Add padding for spacing */
     margin-top: 0rem;
     width: 100vw;
 }
 .cloud-solutions h1 {
-    color: #001F3F; /* Dark heading color */
+    color: #E0E0E0;/* Dark heading color */
     // padding-left: 30%;
     text-align: center;
     font-size: 2rem;
@@ -100,10 +113,10 @@ p {
 }
 
 .cloud-solutions p {
-    border-top: 2px solid #333333;
-    border-bottom: 2px solid #333333;
+    border-left: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
     // width: 30%;
-    color: #333333; /* Dark grey text color */
+    color: #E0E0E0; /* Dark grey text color */
     font-size: 1rem;
     line-height: 1.5;
     // padding: 0 1%;
