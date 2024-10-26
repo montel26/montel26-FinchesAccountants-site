@@ -12,6 +12,7 @@ body {
     margin-top: 0%;
     overflow-wrap: normal;
 }
+
 h1{
     color: #ffffff;
 }
@@ -77,6 +78,7 @@ h1{
     padding-bottom: 2%;
     white-space: nowrap;
     font-size: 18px;
+    // overflow-wrap: normal;
 }
 h1{
     // margin-left: 2%;
@@ -156,13 +158,40 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
-    // .about, .heading {
-    //     margin-left: 5%;
-    // }
-    // .about{
-    //     width: 42vh;
-    // }
+    .about, .heading {
+        margin-left: 18%;
+    }
+    .about{
+        width: 42vh;
+        width: 20vw;
+    }
 
+    h3{
+        padding-left: 11%;
+    }
+    .about .logos{
+        padding-left: 30%;
+    }
+    .about p{
+        margin-right: 100%;
+        padding-right: 100%;
+    }
+    .content-section .about{
+        padding: 0;
+        margin: 0;
+        width: 60vw;
+        overflow-wrap: normal;
+        white-space: normal;
+    }
+    .content-section .about p{
+        word-wrap: break-word;
+        max-width: 100%;
+        
+        overflow: scroll;
+    }
+    .about h1{
+        margin-left: 50%;
+    }
     p {
         width: 100%;
         padding-top: 5%;
