@@ -7,7 +7,7 @@ body {
 }
 
 .content-section {
-    background-color: #001F3F; /* Background color only for the section */
+    background-color: #e7e7e8; /* Background color only for the section */
     padding: 0rem; /* Add padding for the section */
     margin-top: 0%;
     overflow-wrap: normal;
@@ -18,6 +18,7 @@ h1{
 }
 /* Icon Position within Section */
 .cloud-section {
+    
     position: relative;
     width: 100vw; /* Enable positioning within this section */
 }
@@ -67,14 +68,14 @@ h1{
     // overflow: scroll;
 }
 .about p{
-    border-top: 2px solid #F7E7CE;
-    color: #ffffff;
+    border-top: 2px solid  #001F3F;
+    color:  #001F3F;
     padding-left: 10%;
     width: 48%; /* Shortens the length of the borders */
     padding-top: 2%;
     margin: 0 auto;
     font-weight: bold;
-    border-bottom: 2px solid #F7E7CE;
+    border-bottom: 2px solid  #001F3F;
     padding-bottom: 2%;
     white-space: nowrap;
     font-size: 18px;
@@ -82,6 +83,7 @@ h1{
 }
 h1{
     // margin-left: 2%;
+    color:  #001F3F;
     text-align: center;
 }
 // h3{
@@ -101,13 +103,14 @@ p {
     font-size: 18px; /* Increase the font size for better readability */
 }
 .cloud-section {
-    background-color: #001F3F; /* Light grey background */
+    background-color: #a6c8e7; /* Light grey background */
     padding: 2%; /* Add padding for spacing */
     margin-top: 0rem;
     width: 100vw;
 }
 .cloud-solutions h1 {
-    color: #E0E0E0;/* Dark heading color */
+    
+    color:  #001F3F;/* Dark heading color */
     // padding-left: 30%;
     text-align: center;
     font-size: 2rem;
@@ -115,16 +118,17 @@ p {
 }
 
 .cloud-solutions p {
-    border-left: 2px solid #E0E0E0;
-    border-right: 2px solid #E0E0E0;
+    border-left: 2px solid  #001F3F;
+    border-right: 2px solid  #001F3F;
     // width: 30%;
-    color: #E0E0E0; /* Dark grey text color */
+    color: #001F3F; /* Dark grey text color */
     font-size: 1rem;
     line-height: 1.5;
     // padding: 0 1%;
     text-align: left;
     white-space: nowrap; 
 }
+
 .heading {
     margin-left: 20%;
     font-weight: bold;

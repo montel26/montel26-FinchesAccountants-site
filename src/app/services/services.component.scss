@@ -1,5 +1,5 @@
-body {
-    background-color: #001F3F;
+section {
+    background-color: #104862;
     overflow-x: hidden;
 }
 
@@ -11,8 +11,12 @@ body {
     // margin-left: 44%;
     text-decoration: 2px solid underline;
 }
-
+.services{
+    background-color: #104862;
+    // justify-content: space-between;
+}
 h1 {
+    color: #ddd;
     // margin-left: 44%;
     text-decoration: 2px solid underline;
     text-align: center;
@@ -70,17 +74,17 @@ h1 {
     justify-content: flex-start;
     flex-wrap: wrap;
     // margin: 20px 0;
-    background-color: #001F3F;
+    background-color: #104862;
     // padding: 20px;
 }
 
 .plan {
-    background-color: #F2F6FF;
+    background-color: #104862;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
     text-align: left;
-    color: #73B4B1;
+    color: #ddd;
     flex: 1 1 200px;
     margin: 10px;
     // min-width: 250px;
