@@ -36,13 +36,15 @@ h1 {
 }
 
 .service {
-    background-color: #F2F6FF;
+    background-color: #104862;
     border: 1px solid #ddd;
     // padding: 30px;
     // margin: 0 10px;
     width: 20vw; /* Fixed width on large screens */
     text-align: left;
-    color: #73B4B1;
+    // padding: 30px;
+    color:#ddd;
+    opacity: 40%;
     border-radius: 2%;
     border-right: 2px solid #73B4B1;
     border-left: 2px solid #73B4B1;

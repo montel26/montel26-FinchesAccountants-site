@@ -95,7 +95,12 @@ p, li {
         height: auto;
         margin-bottom: 20px; /* Add space between stacked images */
     }
-
+    .logos{
+        padding-left: 30%;
+    }
+    h1{
+        margin-left: 0;
+    }
     .banners img:last-child {
         margin-bottom: 0; /* Remove margin from last image */
     }
