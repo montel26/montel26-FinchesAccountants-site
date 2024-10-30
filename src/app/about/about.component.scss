@@ -12,7 +12,10 @@ body {
     margin-top: 0%;
     overflow-wrap: normal;
 }
-
+.image {
+    max-width: 20vw;
+    margin-right: 20px; /* Adjust space between image and text */
+}
 h1{
     color: #ffffff;
 }
