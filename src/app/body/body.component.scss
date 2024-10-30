@@ -19,9 +19,11 @@ body {
   z-index: 1000;
   display: none;
 }
-// .background-image{
-//   transform: translateY(-50%);
-// }
+.background-image{
+  margin: 0%;
+  padding: 0;
+  transform: translateY(50%);
+}
 /* Responsive Adjustments */
 @media (max-width: 600px) {
   /* Adjust logo size for tablets */
