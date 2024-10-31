@@ -25,10 +25,8 @@ h1 {
 .service-container {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow: hidden;
     width: 100vw;
-    flex-wrap: nowrap;
-    flex-flow: row;
     // padding: 100px;
     // flex-wrap: wrap;
 /*    animation: windAround 78s linear infinite;  Continuous sliding */
@@ -99,7 +97,7 @@ h1 {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;/* Further reduced padding for spacing */
-    width: 100vw;
+    width: 100%;
 }
 
 /* Animation for continuous sliding */

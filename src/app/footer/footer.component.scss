@@ -91,12 +91,13 @@ p, li {
     }
 
     .banners img {
-        width: 40vw;
+        width: 40%;
         height: auto;
         margin-bottom: 20px; /* Add space between stacked images */
+        max-width: 40%;
     }
     .logos{
-        padding-left: 30%;
+        padding-left: 0%;
     }
     h1{
         margin-left: 0;

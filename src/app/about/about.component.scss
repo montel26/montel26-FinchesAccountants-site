@@ -4,6 +4,7 @@ body {
     margin: 0%;
     padding-top: 0%;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 .content-section {
@@ -12,6 +13,7 @@ body {
     margin-top: 0%;
     overflow-wrap: normal;
 }
+
 .image {
     max-width: 20vw;
     margin-right: 20px; /* Adjust space between image and text */
@@ -68,12 +70,15 @@ h1{
     // margin-left: 5%; /* Moves the text slightly to the right */
     font-weight: bold;
     overflow-wrap: normal;
+    width: 50%;
+    margin-left: 23%;
+    padding-bottom: 2%;
     // overflow: scroll;
 }
 .about p{
     border-top: 2px solid  #001F3F;
     color:  #001F3F;
-    padding-left: 10%;
+    padding-left: 2%;
     width: 48%; /* Shortens the length of the borders */
     padding-top: 2%;
     margin: 0 auto;
@@ -105,12 +110,68 @@ p {
     white-space: nowrap;
     font-size: 18px; /* Increase the font size for better readability */
 }
+.about-container{
+    display: flex;
+    width: 100%;
+    padding-right: 5%;
+    border-top: 2px solid  #001F3F;
+    border-bottom: 2px solid  #001F3F;
+}
+.about-container img{
+    padding: 0; 
+    padding-left: 5%;
+    margin: 0;
+    width: 100%;
+    max-width: 20vw;
+}
+.about-container p{
+    border: none;
+    width: 50%;
+    padding: 5%;
+    // margin:  0;
+}
+
+.cloud-container{
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.cloud-container img{
+    padding: 0; 
+    margin: 0;
+    max-width: 20vw;
+}
+
 .cloud-section {
     background-color: #a6c8e7; /* Light grey background */
     padding: 2%; /* Add padding for spacing */
     margin-top: 0rem;
     width: 100vw;
+    // display: flexbox;
 }
+
+.cloud-solutions{
+    width: 55%;
+    margin-left: 20%;
+    border-left: 2px solid  #001F3F;
+    border-right: 2px solid  #001F3F;
+}
+
+// .cloud-solutions p{
+//     width: 50%;
+//     // position: relative;
+//     // transform: translateX(-5%);
+//     // padding-bottom: 30px;
+//     text-align: left;
+// }
+// .cloud-solutions img{
+//     width: 50%;
+//     position: absolute;
+//     // transform: translateY(-102%);
+//     // left: 22.5%;
+//     // max-width: 20vw;
+// }
 .cloud-solutions h1 {
     
     color:  #001F3F;/* Dark heading color */
@@ -121,8 +182,7 @@ p {
 }
 
 .cloud-solutions p {
-    border-left: 2px solid  #001F3F;
-    border-right: 2px solid  #001F3F;
+    
     // width: 30%;
     color: #001F3F; /* Dark grey text color */
     font-size: 1rem;
@@ -139,6 +199,61 @@ p {
 
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
+    body{
+        width: 100vw;
+        margin: 0%;
+        padding-top: 0%;
+        font-weight: bold;
+        overflow-x: hidden;
+    }
+
+    .about-container{
+        width: 100vw;
+        display: block;
+        margin: auto;
+        overflow: hidden;
+    }
+    .about-container img{
+        width: 90%;
+        max-width: 100vw;
+    }
+
+    .about{
+        font-weight: bold;
+        overflow-wrap: normal;
+        width: 100%;
+        margin-left: 0%;
+        padding-bottom: 0%;
+        overflow: visible;
+    }
+
+    .cloud-container{
+        display: block;
+        margin: auto;
+        margin-right: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }.cloud-container img{
+        width: 90%;
+        max-width: 100vw;
+    }
+
+    .cloud-solutions{
+        width: 95%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .cloud-section{
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        padding-left: 2%;
+    }
+    .about h1{
+        padding-left: 0;
+        margin-left: 0;
+    }
     .banners {
         flex-direction: column; /* Stack images vertically on smaller screens */
         height: auto;
@@ -165,12 +280,21 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
     .about, .heading {
         margin-left: 18%;
     }
     .about{
-        width: 42vh;
-        width: 20vw;
+        width: 100%;
+    }
+    .about-container p{
+        white-space:unset;
+        width: 90%;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
     h3{
@@ -179,15 +303,15 @@ p {
     .about .logos{
         padding-left: 30%;
     }
-    .about p{
-        margin-right: 100%;
-        padding-right: 100%;
-    }
+    // .about p{
+    //     margin-right: 100%;
+    //     padding-right: 100%;
+    // }
     .content-section .about{
         padding: 0;
         margin: 0;
         width: 60vw;
-        overflow-wrap: normal;
+        overflow-wrap:normal;
         white-space: normal;
     }
     .content-section .about p{
