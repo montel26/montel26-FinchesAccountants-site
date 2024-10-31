@@ -1,14 +1,3 @@
-/* General Body Styles */
-// body {
-//     font-family: Arial, sans-serif;
-//     background-color: #f0f0f0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100vh;
-//     margin: 0;
-//     // padding: 0%;
-// }
 
 /* Contact Section Styling */
 .contact-section {
@@ -155,9 +144,7 @@
 
 /* Responsive Styling for Mobile */
 @media (max-width: 768px) {
-    .contact-section {
-        // padding: 1.5rem;
-    }
+    
 
     .content {
         flex-direction: column; /* Stack the form and text content vertically */

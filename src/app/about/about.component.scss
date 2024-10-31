@@ -94,9 +94,6 @@ h1{
     color:  #001F3F;
     text-align: center;
 }
-// h3{
-//     margin-left: 42%;
-// }
 
 p {
     // border-top: 2px solid #F7E7CE;
@@ -158,20 +155,7 @@ p {
     border-right: 2px solid  #001F3F;
 }
 
-// .cloud-solutions p{
-//     width: 50%;
-//     // position: relative;
-//     // transform: translateX(-5%);
-//     // padding-bottom: 30px;
-//     text-align: left;
-// }
-// .cloud-solutions img{
-//     width: 50%;
-//     position: absolute;
-//     // transform: translateY(-102%);
-//     // left: 22.5%;
-//     // max-width: 20vw;
-// }
+
 .cloud-solutions h1 {
     
     color:  #001F3F;/* Dark heading color */
@@ -269,9 +253,7 @@ p {
     .banners img:last-child {
         margin-bottom: 0; /* Remove margin from last image */
     }
-    .about, .heading {
-        // margin-left: 10%;
-    }
+    
 
     p {
         width: 90%;
@@ -303,10 +285,7 @@ p {
     .about .logos{
         padding-left: 30%;
     }
-    // .about p{
-    //     margin-right: 100%;
-    //     padding-right: 100%;
-    // }
+    
     .content-section .about{
         padding: 0;
         margin: 0;
@@ -331,13 +310,7 @@ p {
     h1{
         margin-left: 0;
     }
-    .content-section, .about-firm {
-        // padding-right: 1rem; /* Reduce padding for smaller screens */
-    }
-   
-    .cloud-section, .content-section{
-        // width: 40vh;
-    }
+  
     .cloud-solutions p{
         // text-wrap: nowrap;
     //     word-break: break-all;
