@@ -10,7 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 // import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { BackgroundComponent } from './background/background.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms'
     AboutComponent,
     ServicesComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
