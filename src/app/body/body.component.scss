@@ -21,9 +21,11 @@ body {
   display: none;
 }
 .background{
+  // background-image: url("https://au.pinterest.com/pin/576320083562217096/");
   height: 100vh;
 }
 .background-image{
+  background-image: url("/public/city-illuminate-by-sun.jpg");
   background-size: cover;
   transform: translateY(-35%);
   margin: 0%;
