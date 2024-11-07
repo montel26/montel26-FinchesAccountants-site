@@ -74,7 +74,19 @@ p, li {
     padding: 0; /* Remove padding to avoid shifting */
     gap: 20px; /* Add space between images */
 }
+.logos{
+    padding-left: 0%;
+    display: flex;
+    max-height: auto;
+    max-width: 100vw;
+    justify-content: center;
+    background-color: #e7e7e8;
+}
 
+.logos img{
+    max-width: 50vw;
+    max-height: 50vh;
+}
 // .banners img {
 //     width: 100% ;
 //     height: auto;
@@ -96,9 +108,18 @@ p, li {
         margin-bottom: 20px; /* Add space between stacked images */
         max-width: 40%;
     }
+    
+
     .logos{
-        padding-left: 0%;
+        flex-direction: column;
+        align-items: center;
+        // height: 30vh;
     }
+    // .logos img{
+    //     margin-left:5rem ;
+    // }
+
+
     h1{
         margin-left: 0;
     }
